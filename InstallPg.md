@@ -16,6 +16,4 @@ TODO: Complete this section
 
 To install under linux we install the package via;
 
-    $ sudo apt-get install XXXX
-
-TODO: Complete this section
+    $ sudo apt-get install libpq-dev
