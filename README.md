@@ -13,4 +13,4 @@ features but they likely to be required by many projects.
 * [Install java](InstallJava.md)
 * [Install freetds library](InstallFreeTDS.md)
 * [Install pg library](InstallPg.md)
-* [Install Gem Dependencies](InstallGemDependencies.md)
+* [Install gem dependencies](InstallGemDependencies.md)
