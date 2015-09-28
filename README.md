@@ -11,3 +11,4 @@ features but they likely to be required by many projects.
 
 * [Installing ruby and rbenv](InstallRuby.md)
 * [Installing java](InstallJava.md)
+* [Installing FreeTDS library](InstallFreeTDS.md)

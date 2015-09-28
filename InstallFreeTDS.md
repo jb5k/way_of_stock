@@ -1,0 +1,20 @@
+# Installing FreeTDS
+
+FreeTDS is the native library used to talk to SQL Server database. It is only required if the project
+talks to SQL Server.
+
+## OSX Instructions
+
+Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can install ruby via;
+
+    $ brew update
+    $ brew install freetds
+
+
+## Linux Instructions
+
+To install under linux we install the package via;
+
+    $ sudo apt-get install XXXX
+
+TODO: Complete this section
