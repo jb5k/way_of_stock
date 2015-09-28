@@ -1,7 +1,7 @@
 # Installing FreeTDS
 
 FreeTDS is the native library used to talk to SQL Server database. It is only required if the project
-talks to SQL Server.
+talks to SQL Server. It is primarily used by the `tiny_tds` gem dependency.
 
 ## OSX Instructions
 
