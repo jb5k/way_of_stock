@@ -25,8 +25,8 @@ Under Linux you need to checkout rbenv from Git;
 
 Add the following snippet to `~/.bashrc`;
 
-		PATH=$PATH:$HOME/.rbenv/bin
-		eval "$(rbenv init -)"
+    PATH=$PATH:$HOME/.rbenv/bin
+    eval "$(rbenv init -)"
 
 Run `~/.bashrc`;
 
