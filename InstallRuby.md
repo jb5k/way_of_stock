@@ -3,6 +3,9 @@
 We use `rbenv`, a ruby version manager, to manage the ruby versions used by each project. To install
 ruby we first install `rbenv` then issue commands to rbenv to install the correct versions of ruby.
 
+Ruby and `rbenv` are required by a project when there exists a file named `.ruby-version` in the base
+directory of the project.  
+
 ## Installing rbenv
 
 ### OSX Instructions
@@ -31,9 +34,9 @@ Run `~/.bashrc`;
 
 ## Installing ruby
 
-Most projects use the _2.1.3_ version of ruby. Consult the documentation of the project to see what version
-is actually in use and replace _2.1.3_ in the following instructions with the version that the project actually
-uses.
+Most projects use the _2.1.3_ version of ruby. The version of ruby used by a project can be determined by
+reading the contents of the `.ruby-version` in the base directory of the project. Replace _2.1.3_ in the
+following instructions with the version that the project actually uses.
 
 To install ruby, it is as simple as:
 
