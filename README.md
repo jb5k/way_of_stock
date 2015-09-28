@@ -10,3 +10,4 @@ The following documents describe environment setup for our projects. Not all pro
 features but they likely to be required by many projects.
 
 * [Installing ruby and rbenv](InstallRuby.md)
+* [Installing java](InstallJava.md)
