@@ -9,8 +9,8 @@ evolve and be refined over time.
 The following documents describe environment setup for our projects. Not all projects use all of these
 features but they likely to be required by many projects.
 
-* [Installing ruby and rbenv](InstallRuby.md)
-* [Installing java](InstallJava.md)
-* [Installing freetds library](InstallFreeTDS.md)
-* [Installing pg library](InstallPg.md)
-* [Installing Gem Dependencies](InstallGemDependencies.md)
+* [Install ruby and rbenv](InstallRuby.md)
+* [Install java](InstallJava.md)
+* [Install freetds library](InstallFreeTDS.md)
+* [Install pg library](InstallPg.md)
+* [Install Gem Dependencies](InstallGemDependencies.md)
