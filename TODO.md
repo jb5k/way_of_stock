@@ -1,60 +1,46 @@
 Documentation development
+=========================
 
-* Environment Setup
- - Document global gitignores everyone should use
- - Document base coloration scripts
- - Idea
- - nodejs?
- - postgres and optionally postgis - in particular install and initial dev user
- - sql server and initial dev user
- - Glassfish install and paths ... per project? gfenv?
+  * Environment Setup
+    * Document global gitignores everyone should use
+    * Document base coloration scripts
+    * Idea
+    * nodejs?
+    * postgres and optionally postgis - in particular install and initial dev user
+    * sql server and initial dev user
+    * Glassfish install and paths ... per project? gfenv?
  
-* Document release process
- - concept of applications in databags, templates, template types etc
+  * Release process
+    * concept of applications in databags, templates, template types etc
 
-* Document braid
- - Simple HowTo
+  * Braid
+    * Simple HowTo
 
-* Document zim
+  * Zim
 
-* Consider documenting Direnv - http://direnv.net/
+  * Consider documenting Direnv - http://direnv.net/
 
-* Document guiceylooops
- - Document dbcleaner and how to configure
- - Document single database example
- - Document multiple database example
- - Document mail server example
- - Document jndi example
- - Document glassfish container example
- - Document openmq container example
+  * Guiceyloops
+    * Document dbcleaner and how to configure
+    * Document single database example
+    * Document multiple database example
+    * Document mail server example
+    * Document jndi example
+    * Document glassfish container example
+    * Document openmq container example
 
-* Document domgen
- - Overview
- - Getting started
- - Model Elements
- - Facets
- - Generators
+  * Domgen
+    * Overview
+    * Getting started
+    * Model Elements
+    * Facets
+    * Generators
 
-* Document dbt
- - new features
-    - packaged dbt definition
-    - buildr integration
- - better organization    
+  * Dbt
+    * new features
+    * packaged dbt definition
+    * buildr integration
+    * better organization    
 
-* Document replicant
-
-Way of Stock Software
- - Goals are to minimize development cost 
- - Maintained over the next 15 years
- - Consistency
- - Variance starts as an experiment, is deliberate
-
-Way of Development
- - Minimize dependencies
- - Consistent dependencies across all the applications
- - Make it like a single user wrote the code
- - Prefer making architecture identical even if it adds overhead
- - Duplicate it when used in two places, extract it when used in third
-
-Way of operation
+  * Replicant
 
