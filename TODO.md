@@ -5,6 +5,12 @@ Documentation development
  - Document base coloration scripts
  - Idea
  - nodejs?
+ - postgres and optionally postgis - in particular install and initial dev user
+ - sql server and initial dev user
+ - Glassfish install and paths ... per project? gfenv?
+ 
+* Document release process
+ - concept of applications in databags, templates, template types etc
 
 * Document braid
  - Simple HowTo
