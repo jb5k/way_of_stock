@@ -3,9 +3,7 @@ Documentation development
 * Environment Setup
  - Document global gitignores everyone should use
  - Idea
- - rbenv
  - nodejs?
- - java
 
 * Document braid
  - Simple HowTo
