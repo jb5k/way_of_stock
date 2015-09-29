@@ -2,11 +2,16 @@ Documentation development
 
 * Environment Setup
  - Document global gitignores everyone should use
+ - Document base coloration scripts
  - Idea
  - nodejs?
 
 * Document braid
  - Simple HowTo
+
+* Document zim
+
+* Consider documenting Direnv - http://direnv.net/
 
 * Document guiceylooops
  - Document dbcleaner and how to configure
