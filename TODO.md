@@ -1,7 +1,6 @@
 Documentation development
 
 * Environment Setup
- - Document global gitignores everyone should use
  - Document base coloration scripts
  - Idea
  - nodejs?
