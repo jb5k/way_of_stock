@@ -4,7 +4,7 @@ We use `rbenv`, a ruby version manager, to manage the ruby versions used by each
 ruby we first install `rbenv` then issue commands to rbenv to install the correct versions of ruby.
 
 Ruby and `rbenv` are required by a project when there exists a file named `.ruby-version` in the base
-directory of the project.  
+directory of the project.
 
 ## Installing rbenv
 
@@ -55,7 +55,7 @@ While under Linux you may need to do:
     $ cd ~/.rbenv/plugins/ruby-build
     $ git pull
 
-Projects that use dbt to manage the database automation also require the presence of a specific version of 
+Projects that use dbt to manage the database automation also require the presence of a specific version of
 jruby. This is a bug/limitation of dbt and may be fixed at some future point but until such a time, the jruby
 version can be installed by:
 

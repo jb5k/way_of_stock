@@ -1,7 +1,7 @@
 Way of Stock Software
 =====================
 
-* Goals are to minimize development cost 
+* Goals are to minimize development cost
 * Maintained over the next 15 years
 * Consistency
 * Variance starts as an experiment, is deliberate

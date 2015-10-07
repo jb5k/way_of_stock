@@ -58,7 +58,7 @@ Libre Office
 VPN
 ---
 Mac: [Download Cisco AnyConnect mobility client 3.1](https://s3-ap-southeast-2.amazonaws.com/stocksoftware-installers/CiscoAnyConnect/mac/anyconnect-macosx-i386-3.1.06079-k9.dmg)
- 
+
 Slack
 -----
 
@@ -81,7 +81,7 @@ First Project
 =============
 
 `$ gem install bundler`
-  
+
 `$ rbenv rehash`
 
 `$ bundle install`

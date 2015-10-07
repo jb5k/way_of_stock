@@ -8,7 +8,7 @@ Documentation development
     * postgres and optionally postgis - in particular install and initial dev user
     * sql server and initial dev user
     * Glassfish install and paths ... per project? gfenv?
- 
+
   * Release process
     * concept of applications in databags, templates, template types etc
 
@@ -39,7 +39,6 @@ Documentation development
     * new features
     * packaged dbt definition
     * buildr integration
-    * better organization    
+    * better organization
 
   * Replicant
-

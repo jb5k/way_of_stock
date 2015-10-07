@@ -6,7 +6,7 @@ evolve and be refined over time.
 
 ## Basic Host Setup
 
-Before starting any project, please ensure that your shell is correctly setup. 
+Before starting any project, please ensure that your shell is correctly setup.
 
 * [Setup git global ignores](SetupGitGlobalIgnores.md)
 
