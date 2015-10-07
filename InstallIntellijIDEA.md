@@ -86,3 +86,4 @@ use Buildr (i.e. the Chef projects), it is enough to manually create the project
 
 TODO: Fix linux path
 TODO: Replace link to google license document
+TODO: Record the fact that under Linux we need to change the open files limit?
