@@ -20,3 +20,4 @@ features but they likely to be required by many projects.
 * [Install freetds library](InstallFreeTDS.md)
 * [Install pg library](InstallPg.md)
 * [Install gem dependencies](InstallGemDependencies.md)
+* [Install IntelliJ IDEA](InstallIntellijIDEA.md)
