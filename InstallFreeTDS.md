@@ -10,7 +10,6 @@ Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can in
     $ brew update
     $ brew install freetds
 
-
 ## Linux Instructions
 
 To install under linux we install the package via;
