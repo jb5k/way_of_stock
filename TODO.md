@@ -2,7 +2,6 @@ Documentation development
 =========================
 
   * Environment Setup
-    * Document base coloration scripts
     * nodejs?
     * postgres and optionally postgis - in particular install and initial dev user
     * sql server and initial dev user
