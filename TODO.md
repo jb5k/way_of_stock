@@ -1,6 +1,14 @@
 Documentation development
 =========================
 
+  * Architectural Overview
+    * Boundary-Control-Entity layers
+      - Interactions with External Systems
+      - Interfaces for External Systems
+      - Typical Transaction Boundaries
+      - Boundary Examples: JAXRS, GWT RPC, JAXWS, JSF Controllers, etc 
+      - Entity Examples: Soap service, Database Service, Mail Service etc 
+  
   * Environment Setup
     * nodejs?
     * postgres and optionally postgis - in particular install and initial dev user
