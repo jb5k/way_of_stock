@@ -22,3 +22,10 @@ features but they likely to be required by many projects.
 * [Install pg library](InstallPg.md)
 * [Install gem dependencies](InstallGemDependencies.md)
 * [Install IntelliJ IDEA](InstallIntellijIDEA.md)
+
+## Essential Tools
+
+The following documents describe some of the essential tools in use in our projects. They should give a starting
+point for using the toos within the context of our projects.
+
+* [Buildr](BuildrHowto.md)
