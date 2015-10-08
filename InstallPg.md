@@ -8,9 +8,9 @@ talks to Postgres. It is primarily used by the `pg` gem dependency.
 Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can install via;
 
     $ brew update
-    $ brew install XXXX
+    $ brew install postgresql
 
-TODO: Complete this section
+Note that this installs the full database. The client libraries are included with the database.
 
 ## Linux Instructions
 
