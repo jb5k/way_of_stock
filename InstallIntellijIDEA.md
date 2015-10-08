@@ -8,7 +8,7 @@ which to build, test and debug our application suite. The version of IDEA that w
 The first step is to download the "Ultimate Edition" of IDEA from [https://www.jetbrains.com/idea/download/](https://www.jetbrains.com/idea/download/).
 While the website indicates that the version downloaded is a _Free 30-day Trial_ that is the same version we download.
 There are three separate versions variants, one for Windows, Linux or Mac OS X. Download the one appropriate for your
-operating system. The license key for IDEA can be found in the google docs document at [X](X), use the one allocated to
+operating system. The license key for IDEA can be found in the google docs document at [https://docs.google.com/document/d/1chtpG1YgI-u8TvAvhdTJ2umL4yoUssIEXW_vLn37EmE/edit](https://docs.google.com/document/d/1chtpG1YgI-u8TvAvhdTJ2umL4yoUssIEXW_vLn37EmE/edit), use the one allocated to
 your name or find an unallocated key and use that.
 
 Under OSX we tend to install into the default location (i.e. `/Applications/`) while under linux we tend to install it
@@ -70,7 +70,7 @@ plugin repository.
 
 The default JVM settings are insufficient when working on large projects with lot's of source files. So you need to
 update the JVM settings of IDEA to give it more memory. The file to edit is at `/Applications/IntelliJ\ IDEA\ 14.app/Contents/bin/idea.vmoptions`
-on OSX and `~/Applications/idea-X/bin/idea64.vmoptions` and change the memory settings to increase the minimum,
+on OSX and `~/Applications/idea-IU-141.2735.5/bin/idea64.vmoptions` and change the memory settings to increase the minimum,
 maximum and maximum perm memory settings. A typical configuration may have values such as the following in the
 config file:
 
@@ -84,6 +84,4 @@ Most projects use Buildr to generate the project files and explicitly configure 
 follow the Buildr [instructions](BuildrHowto.md#IDE) on how to generate the projects. For the few projects that don't
 use Buildr (i.e. the Chef projects), it is enough to manually create the projects.
 
-TODO: Fix linux path
-TODO: Replace link to google license document
 TODO: Record the fact that under Linux we need to change the open files limit?
