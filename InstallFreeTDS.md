@@ -14,6 +14,4 @@ Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can in
 
 To install under linux we install the package via;
 
-    $ sudo apt-get install XXXX
-
-TODO: Complete this section
+    $ sudo apt-get install freetds-dev
