@@ -9,6 +9,7 @@ evolve and be refined over time.
 Before starting any project, please ensure that your shell is correctly setup.
 
 * [Setup git global ignores](SetupGitGlobalIgnores.md)
+* [Setting up the shell prompt](SetupShellPrompt.md)
 
 ## Environment Setup
 
