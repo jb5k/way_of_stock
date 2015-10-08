@@ -8,7 +8,9 @@ Before the Gem dependencies are installed, it is important to install any requir
 Typically this means installing the native database drivers ([Pg](InstallPg.md) or [FreeTDS](InstallFreeTDS.md)
 libraries) and [java](InstallJava.md). Note that `JAVA_HOME` **MUST** be set if java is used by a Gem dependency.
 
-You _may_ need to install `bundler` if it is not already installed. You can check if if `bundler` is installed by running `gem list | grep bundler` and expect to see it output to the console if it is installed.
+[Bundler](http://gembundler.com/) is the tool used to install and manage gem dependencies. You _may_ need to
+install `bundler` if it is not already installed. You can check if if `bundler` is installed by running
+`gem list | grep bundler` and expect to see it output to the console if it is installed.
 
     $ gem install bundler
     $ rbenv rehash
