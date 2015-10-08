@@ -1,5 +1,22 @@
 # Setup Git
 
+## Install Git
+
+Git is likely already installed but if not, it will need to be installed.
+
+### OSX Instructions
+
+Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can install via;
+
+    $ brew update
+    $ brew install git
+
+### Linux Instructions
+
+To install under linux we install the package via;
+
+    $ sudo apt-get install git
+
 ## Configuring Basic Settings
 
 The first thing you should do when you install Git is to set your user name and email address. This is important

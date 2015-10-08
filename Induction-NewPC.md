@@ -12,12 +12,6 @@ Chrome
 ------
 [Download](http://www.google.com/chrome/)
 
-Git
----
-Ubuntu: `$ sudo apt-get install git`
-
-Mac: `$ brew install git`
-
 Java 7
 ------
 Mac: [Download](https://s3-ap-southeast-2.amazonaws.com/stocksoftware-installers/jdk7/mac/jdk-7u79-macosx-x64.dmg)
