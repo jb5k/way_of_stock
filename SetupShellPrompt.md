@@ -8,5 +8,5 @@ prompt using the following script. The prompt modification shows;
 * the ruby version (if rbenv is installed)
 
 The script can be downloaded from [prompt.sh](prompt.sh). The contents can be appended to the `~/.bashrc` script
-or you can place the script in a directory (i.e. `~/.bash.d`) and source it from the `~/.bashrc` script (i.e. 
+or you can place the script in a directory (i.e. `~/.bash.d`) and source it from the `~/.bashrc` script (i.e.
 append `source ~/.bash.d/prompt.sh` to the `~/.bashrc` script).
