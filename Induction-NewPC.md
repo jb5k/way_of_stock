@@ -33,11 +33,6 @@ Slack
 Source Tree (Mac only)
 ----------------------
 
-Payara
-------
-Mac: Download, unpack to ~/Applications/payara
-
 Keepass 2.30
 ------------
 [Download](http://keepass.info/download.html) (requires Mono and XQuartz on a Mac)
-

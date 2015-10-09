@@ -22,6 +22,7 @@ features but they likely to be required by many projects.
 * [Install pg library](InstallPg.md)
 * [Install gem dependencies](InstallGemDependencies.md)
 * [Install IntelliJ IDEA](InstallIntellijIDEA.md)
+* [Install GlassFish](InstallGlassFish.md)
 
 ## Essential Tools
 
