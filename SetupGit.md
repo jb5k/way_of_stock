@@ -25,6 +25,10 @@ because every Git commit uses this information, and it’s immutably baked into 
     $ git config --global user.name "My Name"
     $ git config --global user.email myname@example.com
 
+You can verify the settings are correctly set by listing the values using the command:
+
+    $ git config --global -l
+
 Again, you need to do this only once if you pass the `--global` option, because then Git will always use that
 information for anything you do on that system. If you want to override this with a different name or email
 address for specific projects, you can run the command without the `--global` option when you’re in that project.
