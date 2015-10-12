@@ -17,9 +17,6 @@ Documentation development
   * Release process
     * concept of applications in databags, templates, template types etc
 
-  * Braid
-    * Simple HowTo
-
   * Zim
 
   * Consider documenting Direnv - http://direnv.net/
