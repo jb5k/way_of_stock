@@ -8,6 +8,7 @@ evolve and be refined over time.
 
 Before starting any project, please ensure that your shell is correctly setup.
 
+* [Install Homebrew](InstallHomebrew.md) (Mac Only)
 * [Setup git](SetupGit.md)
 * [Setting up the shell prompt](SetupShellPrompt.md)
 

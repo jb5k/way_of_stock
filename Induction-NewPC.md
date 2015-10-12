@@ -4,10 +4,6 @@ New Computer Checklist
 Create User
 -----------
 
-Brew (Mac only)
----------------
-`$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-
 Chrome
 ------
 [Download](http://www.google.com/chrome/)
