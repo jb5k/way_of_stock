@@ -32,3 +32,10 @@ point for using the toos within the context of our projects.
 
 * [Braid](BraidHowto.md)
 * [Buildr](BuildrHowto.md)
+
+## Learning Goals
+
+Most people should be able to perform the basic tasks required by our projects. To start to promotote this
+we are trying to develop a series of checklists to document what you should be able to do:
+
+* [Learning Checklist](LearningChecklist.md)
