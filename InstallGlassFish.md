@@ -19,7 +19,7 @@ is to append the following line to `~/.bashrc`.
 
 ## Configuring and Managing Domains
 
-GlassFish has the concept of domains that are isolated instances of GlassFish that can be started and stopped 
+GlassFish has the concept of domains that are isolated instances of GlassFish that can be started and stopped
 independently. Most projects start up a separate domain from all projects so that they can developed in isolation
 from other projects. Occasionally a project will require the existance of a domain managed by another project and
 will deploy artifacts into the other projects domain but this will be documented in the projects README.
@@ -28,7 +28,7 @@ Projects will typically have a script `config/setup.sh` that can be sourced to c
 settings required for the project. If present the domain should be able to be created by:
 
     $ source config/setup.sh
-    
+
 ## Operating GlassFish from the command-line
 
 The domain will typically have the same name as the project. After the domain is created you can start and stop the
@@ -37,7 +37,7 @@ the sake of the example let us assume the project's name is `myproject` and it c
 
     # Start the domain
     $ asadmin start-domain myproject
-    
+
     # Deploy the webapp
     $ asadmin deploy --name myproject --contextroot myproject --force=true target/myproject-server/myproject-*.war
 
@@ -55,8 +55,8 @@ Due to a bug in IDEA, the first time you open a project after creating the domai
 configuration, indicating it is invalid. You need to click on "Edit Configuration"  and click on the "Fix" button
 next to the _"Debug settings are invalid or not suitable for local development"_ warning at the bottom of the dialog.
 
-Some projects may allow the deployment of the local project into an already running (a.k.a. remote ) domain 
-instance. If this is the case the configuration will be prefixed with the word _Remote_. When using remote 
+Some projects may allow the deployment of the local project into an already running (a.k.a. remote ) domain
+instance. If this is the case the configuration will be prefixed with the word _Remote_. When using remote
 configurations, you should **never** try to run the configuration in debug mode as this will not work and
 may crash GlassFish.
 
