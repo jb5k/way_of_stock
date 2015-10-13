@@ -28,10 +28,16 @@ features but they likely to be required by many projects.
 ## Essential Tools
 
 The following documents describe some of the essential tools in use in our projects. They should give a starting
-point for using the toos within the context of our projects.
+point for using the tools within the context of our projects.
 
 * [Braid](BraidHowto.md)
 * [Buildr](BuildrHowto.md)
+
+## Useful Tools
+The following documents describe some of the useful tools in use in our projects. They should give a starting
+point for using the tools within the context of our projects.
+
+* [Install QBroswerLite](InstallQBrowserLite.md)
 
 ## Learning Goals
 
