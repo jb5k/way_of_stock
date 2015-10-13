@@ -30,8 +30,8 @@ features but they likely to be required by many projects.
 The following documents describe some of the essential tools in use in our projects. They should give a starting
 point for using the toos within the context of our projects.
 
-* [Braid](BraidHowto.md)
-* [Buildr](BuildrHowto.md)
+* [Braid](HowToBraid.md)
+* [Buildr](HowToBuildr.md)
 
 ## Learning Goals
 
