@@ -1,6 +1,6 @@
 # Install Java
 
-Most projects expect thatjava is installed and the ``JAVA_HOME`` is set to the correct location.
+Most projects expect that java is installed and the ``JAVA_HOME`` is set to the correct location.
 
 ## OSX Instructions
 
