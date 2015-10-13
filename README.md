@@ -42,7 +42,7 @@ point for using the tools within the context of our projects.
 
 ## Learning Goals
 
-Most people should be able to perform the basic tasks required by our projects. To start to promotote this
+Most people should be able to perform the basic tasks required by our projects. To start to promote this
 we are trying to develop a series of checklists to document what you should be able to do:
 
 * [Learning Checklist](LearningChecklist.md)
