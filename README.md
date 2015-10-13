@@ -31,14 +31,9 @@ features but they likely to be required by many projects.
 The following documents describe some of the essential tools in use in our projects. They should give a starting
 point for using the tools within the context of our projects.
 
-* [Braid](HowToBraid.md)
-* [Buildr](HowToBuildr.md)
-
-## Useful Tools
-The following documents describe some of the useful tools in use in our projects. They should give a starting
-point for using the tools within the context of our projects.
-
-* [Install QBroswerLite](InstallQBrowserLite.md)
+* [Braid](HowToBraid.md): Vendor branch management tool.
+* [Buildr](HowToBuildr.md): Build automation tool.
+* [QBroswerLite](InstallQBrowserLite.md): OpenMQ Message Broker Destination browser.
 
 ## Learning Goals
 
