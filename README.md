@@ -33,7 +33,7 @@ point for using the tools within the context of our projects.
 
 * [Braid](HowToBraid.md): Vendor branch management tool.
 * [Buildr](HowToBuildr.md): Build automation tool.
-* [QBroswerLite](InstallQBrowserLite.md): OpenMQ Message Broker Destination browser.
+* [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 
 ## Learning Goals
 
