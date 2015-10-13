@@ -19,8 +19,6 @@ Documentation development
 
   * Zim
 
-  * Consider documenting Direnv - http://direnv.net/
-
   * Guiceyloops
     * Document dbcleaner and how to configure
     * Document single database example
