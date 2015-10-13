@@ -24,6 +24,7 @@ features but they likely to be required by many projects.
 * [Install gem dependencies](InstallGemDependencies.md)
 * [Install IntelliJ IDEA](InstallIntellijIDEA.md)
 * [Install GlassFish](InstallGlassFish.md)
+* [Install Docker](InstallDocker.md)
 
 ## Essential Tools
 
