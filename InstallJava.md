@@ -16,6 +16,10 @@ Run `~/.bashrc`;
 
     $ source ~/.bashrc
 
+Unfortunately due to the way some java programs interact with OSX, they also require that the legacy Java 6
+to be present even if it is not used. To install the Java6 JVM the package should be downloaded and installed
+from `https://support.apple.com/kb/DL1572?locale=en_US`
+
 ## Linux Instructions
 
 To install under linux we install the package from a custom repository;
