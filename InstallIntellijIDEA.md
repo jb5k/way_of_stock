@@ -11,10 +11,17 @@ There are three separate versions variants, one for Windows, Linux or Mac OS X. 
 operating system. The license key for IDEA can be found in the google docs document at [https://docs.google.com/document/d/1chtpG1YgI-u8TvAvhdTJ2umL4yoUssIEXW_vLn37EmE/edit](https://docs.google.com/document/d/1chtpG1YgI-u8TvAvhdTJ2umL4yoUssIEXW_vLn37EmE/edit), use the one allocated to
 your name or find an unallocated key and use that.
 
-Under OSX we tend to install into the default location (i.e. `/Applications/`) while under linux we tend to install it
-in `~/Applications/`.
+### OSX
+Install into the default location (i.e. `/Applications/`).
+ 
+### Ubuntu 
+Extract to `~/Applications/idea-IU-141.2735.5` (or similar).
 
-### Plugins
+Create a symlink called `idea` to the longer directory name.
+
+    $ ln -s idea--IU-141.2735.5 idea
+
+## Plugins
 
 When installing IDEA we typically use a reduced subset of the plugins. The fewer plugins that are active, the better
 the performance of the IDE. It is highly recommended that the activated plugins be reduced to the following subset.
@@ -66,7 +73,7 @@ The builtin plugins that we require:
 Note: Any plugins in _italics_ are plugins that are not supplied with the IDE and must be downloaded from the central
 plugin repository.
 
-### JVM Settings
+## JVM Settings
 
 The default JVM settings are insufficient when working on large projects with lot's of source files. So you need to
 update the JVM settings of IDEA to give it more memory. The file to edit is at `/Applications/IntelliJ\ IDEA\ 14.app/Contents/bin/idea.vmoptions`
@@ -78,7 +85,7 @@ config file:
     -Xmx1850m
     -XX:MaxPermSize=550m
 
-### Per Project Configuration
+## Per Project Configuration
 
 Most projects use Buildr to generate the project files and explicitly configure the required facets and settings. So
 follow the Buildr [instructions](BuildrHowto.md#IDE) on how to generate the projects. For the few projects that don't

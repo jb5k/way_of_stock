@@ -38,6 +38,10 @@ Most projects use the _2.1.3_ version of ruby. The version of ruby used by a pro
 reading the contents of the `.ruby-version` in the base directory of the project. Replace _2.1.3_ in the
 following instructions with the version that the project actually uses.
 
+Under Linux, first install required dependencies:
+
+    $ apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+
 To install ruby, it is as simple as:
 
     $ rbenv install 2.1.3
