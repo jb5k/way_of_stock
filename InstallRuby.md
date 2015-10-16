@@ -64,3 +64,7 @@ jruby. This is a bug/limitation of dbt and may be fixed at some future point but
 version can be installed by:
 
     $ rbenv install jruby-1.7.2
+
+Under Linux you _may_ need to install the dependency:
+
+    $ sudo apt-get install -y g++

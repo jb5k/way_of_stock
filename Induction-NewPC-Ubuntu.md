@@ -31,9 +31,6 @@ See [InstallIntellijIDEA.md](./InstallIntellijIDEA.md).
 
 Ruby
 ----
-Install the following packages:
-    
-    $ sudo apt-get install g++
 
 See [InstallRuby.md](./InstallRuby.md).
 
