@@ -12,9 +12,11 @@ operating system. The license key for IDEA can be found in the google docs docum
 your name or find an unallocated key and use that.
 
 ### OSX
+
 Install into the default location (i.e. `/Applications/`).
  
-### Ubuntu 
+### Ubuntu
+
 Extract to `~/Applications/idea-IU-141.2735.5` (or similar).
 
 Create a symlink called `idea` to the longer directory name.
