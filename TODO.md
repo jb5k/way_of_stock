@@ -10,7 +10,6 @@ Documentation development
       - Entity Examples: Soap service, Database Service, Mail Service etc
 
   * Environment Setup
-    * nodejs?
     * postgres and optionally postgis - in particular install and initial dev user
     * sql server and initial dev user
 

@@ -48,7 +48,7 @@ See [InstallPg.md](./InstallPg.md).
 
 NodeJS
 ------
-See [InstallNodeJS.md](./InstallNodeJS.md).
+See [HowToNodeJS.md](./HowToNodeJS.md).
 
 Postgres DB
 -----------
