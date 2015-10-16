@@ -13,7 +13,7 @@ This should be downloaded and unzipped into the directory `~/Applications/payara
 
 Create a symlink called `payara` to the longer directory name.
 
-    $ ln -s payara41 payara
+    $ ln -s ~/Applications/payara-4.1.152 ~/Applications/payara
 
 ## Configuring the shell path
 
