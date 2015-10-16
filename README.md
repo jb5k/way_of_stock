@@ -29,14 +29,15 @@ features but they likely to be required by many projects.
 ## Essential Tools
 
 The following documents describe some of the essential tools in use in our projects. They should give a starting
-point for using the toos within the context of our projects.
+point for using the tools within the context of our projects.
 
-* [Braid](HowToBraid.md)
-* [Buildr](HowToBuildr.md)
+* [Braid](HowToBraid.md): Vendor branch management tool.
+* [Buildr](HowToBuildr.md): Build automation tool.
+* [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 
 ## Learning Goals
 
-Most people should be able to perform the basic tasks required by our projects. To start to promotote this
+Most people should be able to perform the basic tasks required by our projects. To start to promote this
 we are trying to develop a series of checklists to document what you should be able to do:
 
 * [Learning Checklist](LearningChecklist.md)
