@@ -19,7 +19,7 @@ Extract to `~/Applications/idea-IU-141.2735.5` (or similar).
 
 Create a symlink called `idea` to the longer directory name.
 
-    $ ln -s idea--IU-141.2735.5 idea
+    $ ln -s ~/Applications/idea-IU-141.2735.5 ~/Applications/idea
 
 ## Plugins
 
