@@ -28,7 +28,6 @@
 ### DELWP
 
 * Create account on Fireweb
-* Create account on DELWP git, Jira, Confluence
 * Create account on DELWP Jira
 * Create account on DELWP GitHub
 * Create account on DELWP Confluence
