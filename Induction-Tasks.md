@@ -9,7 +9,7 @@
 
 * Sign Conditions of Employment (employment contract)
 * Fill out Standard Choice form (super)
-* Fill out TFN declaration 
+* Fill out TFN declaration
 * Share mobile numbers
 * Create stocksoftware email address (and forward to Gmail)
 * Add account to mailing lists
