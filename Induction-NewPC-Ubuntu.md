@@ -15,11 +15,11 @@ Use Software Centre.
 
 Java 7
 ------
-See [InstallJava.md](./InstallJava.md).
+See [InstallJava.md](InstallJava.md).
 
 Java 8
 ------
-See [InstallJava.md](./InstallJava.md), except use:
+See [InstallJava.md](InstallJava.md), except use:
 
     $ sudo apt-get install oracle-java8-installer
 
@@ -27,24 +27,24 @@ Currently only required for ARENA development.
 
 Intellij Idea
 -------------
-See [InstallIntellijIDEA.md](./InstallIntellijIDEA.md).
+See [InstallIntellijIDEA.md](InstallIntellijIDEA.md).
 
 Ruby
 ----
 
-See [InstallRuby.md](./InstallRuby.md).
+See [InstallRuby.md](InstallRuby.md).
 
 Buildr
 ------
-See [InstallGemDependencies.md](./InstallGemDependencies.md).
+See [InstallGemDependencies.md](InstallGemDependencies.md).
 
 Payara
 ------
-See [InstallGlassFish.md](./InstallGlassFish.md).
+See [InstallGlassFish.md](InstallGlassFish.md).
 
 NodeJS
 ------
-See [HowToNodeJS.md](./HowToNodeJS.md).
+See [HowToNodeJS.md](HowToNodeJS.md).
 
 Postgres DB
 -----------
