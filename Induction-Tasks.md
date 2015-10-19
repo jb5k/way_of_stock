@@ -31,6 +31,8 @@
 * Create account on DELWP Jira
 * Create account on DELWP GitHub
 * Create account on DELWP Confluence
+* Create account on DELWP Chef
+* Configure DELWP Chef to define user on Linux hosts
 * Get DELWP soe access
 
 ### Arena
