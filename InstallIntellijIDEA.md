@@ -14,7 +14,7 @@ your name or find an unallocated key and use that.
 ### OSX
 
 Install into the default location (i.e. `/Applications/`).
- 
+
 ### Ubuntu
 
 Extract to `~/Applications/idea-IU-141.2735.5` (or similar).

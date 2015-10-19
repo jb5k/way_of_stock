@@ -17,7 +17,7 @@ Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can in
 To install under linux we install the package via;
 
     $ sudo apt-get install python-software-properties
-    $ sudo apt-add-repository ppa:chris-lea/node.js    
+    $ sudo apt-add-repository ppa:chris-lea/node.js
     $ sudo apt-get update
     $ sudo apt-get install nodejs
 
@@ -27,7 +27,7 @@ To install under linux we install the package via;
 tools and libraries in the Node ecosystem. Node packages can either be installed globally or locally
 to the project. As all of our projects use a limited subset of tools we tend to install globally which
 means passing the `-g` flag to `npm`.
- 
+
 An example of how to install Less.js a CSS preprocessor that we have used is:
 
     $ sudo npm install -g less
