@@ -20,7 +20,7 @@
 * Create account on Github
 * Create account on Stock Jira
 * Share Google Drive content (idea, NAFC, Policies (Public), Projects)
-* Create account on Chef
+* Create account on Public Hosted Chef
 * Create account on Artifactory
 * Create account on New Relic
 * Create account on Papertrail
