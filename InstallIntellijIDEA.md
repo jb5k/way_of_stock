@@ -75,6 +75,9 @@ The builtin plugins that we require:
 Note: Any plugins in _italics_ are plugins that are not supplied with the IDE and must be downloaded from the central
 plugin repository.
 
+## Optional Plugins
+* _Key Promoter_  can be used to learn the keystroke bindings for those new to IDEA
+
 ## JVM Settings
 
 The default JVM settings are insufficient when working on large projects with lot's of source files. So you need to
@@ -94,3 +97,11 @@ follow the Buildr [instructions](BuildrHowto.md#IDE) on how to generate the proj
 use Buildr (i.e. the Chef projects), it is enough to manually create the projects.
 
 TODO: Record the fact that under Linux we need to change the open files limit?
+
+## Keyboard mappings for Ubuntu
+
+When running IDEA for Ubuntu, due to the Unity UI, a number of keystrokes are unavailable.
+
+Turn off the following keymappings for Unity to make sure IDEA works as expected:
+
+[TBD, and how]
