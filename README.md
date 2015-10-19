@@ -35,6 +35,7 @@ point for using the tools within the context of our projects.
 * [Buildr](HowToBuildr.md): Build automation tool.
 * [NodeJS](HowToNodeJS.md): Javascript runtime environment and ecosystem.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
+* [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
 
 ## Learning Goals
 
