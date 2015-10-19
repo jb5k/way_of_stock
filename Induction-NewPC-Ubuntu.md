@@ -42,10 +42,6 @@ Payara
 ------
 See [InstallGlassFish.md](./InstallGlassFish.md).
 
-Postgres Client Libraries
--------------------------
-See [InstallPg.md](./InstallPg.md).
-
 NodeJS
 ------
 See [HowToNodeJS.md](./HowToNodeJS.md).

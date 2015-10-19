@@ -5,7 +5,7 @@ directory of the project. The `Gemfile` declares the required dependencies while
 generated when a specific set of dependencies are selected to fulfill the dependencies.
 
 Before the Gem dependencies are installed, it is important to install any required native libraries.
-Typically this means installing the native database drivers ([Pg](InstallPg.md) or [FreeTDS](InstallFreeTDS.md)
+Typically this means installing the native database drivers ([Postgres](InstallPostgres.md) or [FreeTDS](InstallFreeTDS.md)
 libraries) and [java](InstallJava.md). Note that `JAVA_HOME` **MUST** be set if java is used by a Gem dependency.
 
 [Bundler](http://gembundler.com/) is the tool used to install and manage gem dependencies. You _may_ need to

@@ -20,7 +20,6 @@ features but they likely to be required by many projects.
 * [Install ruby and rbenv](InstallRuby.md)
 * [Install java](InstallJava.md)
 * [Install freetds library](InstallFreeTDS.md)
-* [Install pg library](InstallPg.md)
 * [Install gem dependencies](InstallGemDependencies.md)
 * [Install IntelliJ IDEA](InstallIntellijIDEA.md)
 * [Install GlassFish](InstallGlassFish.md)
@@ -36,6 +35,7 @@ point for using the tools within the context of our projects.
 * [NodeJS](HowToNodeJS.md): Javascript runtime environment and ecosystem.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 * [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
+* [Postgres](InstallPostgres.md): Postgres database server.
 
 ## Learning Goals
 
