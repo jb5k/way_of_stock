@@ -1,8 +1,8 @@
 # Tasks to be done to get a new starter up and running
 
 ## Before arrival
-* [Set up Mac PC](./Induction-NewPC-Ubuntu.md)
-* [Set up Ubuntu PC](./Induction-NewPC-Ubuntu.md)
+* [Set up Mac PC](Induction-NewPC-Ubuntu.md)
+* [Set up Ubuntu PC](Induction-NewPC-Ubuntu.md)
 
 ## On Day One
 * Share mobile numbers
