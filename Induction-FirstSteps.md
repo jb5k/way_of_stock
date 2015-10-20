@@ -1,5 +1,4 @@
-Day 1
-=====
+# Day 1
 
 * Meet your PC
 * Meet the core team
@@ -8,8 +7,7 @@ Day 1
 * Release something to UAT (Sauron?)
 * Understand the next 3 weeks
 
-Weeks 1-3
-=========
+# Weeks 1-3
 
 * Rotate through 3 projects
 * Pair with 3 different people

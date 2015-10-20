@@ -1,5 +1,4 @@
-What we use, and how it fits together
-=====================================
+# What we use, and how it fits together
 
 * Idea
 * Git / Github

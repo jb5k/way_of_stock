@@ -1,8 +1,6 @@
-Meet these people
-=================
+# Meet these people
 
-Stock Software
---------------
+## Stock Software
 
 * Ian: Director. Paymaster. VicSuper contact. ARENA contact / lead. AWS devops.
 * James: Director. DELWP contact. IRIS contact (other states). Melbourne Water contact. General devops.
@@ -12,8 +10,7 @@ Stock Software
 * Karen: Ruby on Rails. CWN / Altona / EPWP. Off site. Testing. IRIS & Firetimes.
 * Pavel: EPWP.
 
-Clients
--------
+## Clients
 
 * Phil Pringuer: IRIS Support. DELWP primary customer.
 * Rob Vink: Fireweb support.
@@ -21,8 +18,7 @@ Clients
 * Saionn: Sunesis owner. Fireweb tech lead.
 * Andrew Matthews: ARENA primary customer. NAFC.
 
-Understand how to ...
-=====================
+## Understand how to ...
 
 * propose a change to architecture
 * introduce a new tool
