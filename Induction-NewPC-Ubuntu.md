@@ -15,3 +15,18 @@
 * VPN: Use Ubuntu built-in VPN client.
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
 * Bookmarks: Add [Slack](http://todo)
+
+## VPN Issues
+
+To ensure the DNS behaves correctly when connected to the FEM VPN, you are forced to disable DNSMasq. To do this
+you edit network configuration via:
+
+    $ gksu gedit /etc/NetworkManager/NetworkManager.conf
+
+And comment out dnsmasq so that it looks like:
+
+    #dns=dnsmasq
+
+And restart the network manager via:
+
+    $ sudo service network-manager restart
