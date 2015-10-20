@@ -1,21 +1,20 @@
-Documentation development
-=========================
+# Documentation development
 
-  * Architectural Overview
+* Architectural Overview
     * Boundary-Control-Entity layers
-      - Interactions with External Systems
-      - Interfaces for External Systems
-      - Typical Transaction Boundaries
-      - Boundary Examples: JAXRS, GWT RPC, JAXWS, JSF Controllers, etc
-      - Entity Examples: Soap service, Database Service, Mail Service etc
+        * Interactions with External Systems
+        * Interfaces for External Systems
+        * Typical Transaction Boundaries
+        * Boundary Examples: JAXRS, GWT RPC, JAXWS, JSF Controllers, etc
+        * Entity Examples: Soap service, Database Service, Mail Service etc
 
-  * Environment Setup
+* Environment Setup
     * sql server and initial dev user
 
-  * Release process
+* Release process
     * concept of applications in databags, templates, template types etc
 
-  * Guiceyloops
+* Guiceyloops
     * Document dbcleaner and how to configure
     * Document single database example
     * Document multiple database example
@@ -24,32 +23,32 @@ Documentation development
     * Document glassfish container example
     * Document openmq container example
 
-  * Domgen
+* Domgen
     * Overview
     * Getting started
     * Model Elements
     * Facets
     * Generators
 
-  * Dbt
+* Dbt
     * new features
     * packaged dbt definition
     * buildr integration
     * better organization
 
-  * Replicant
+* Replicant
 
-  * Way of Stock Software:
+* Way of Stock Software:
     * Goals are to minimize development cost
     * Maintained over the next 15 years
     * Consistency
     * Variance starts as an experiment, is deliberate
 
-  * Way of Development
+* Way of Development
     * Minimize dependencies
     * Consistent dependencies across all the applications
     * Make it like a single user wrote the code
     * Prefer making architecture identical even if it adds overhead
     * Duplicate it when used in two places, extract it when used in third
 
-  * Way of Operation
+* Way of Operation
