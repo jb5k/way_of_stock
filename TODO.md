@@ -15,8 +15,6 @@ Documentation development
   * Release process
     * concept of applications in databags, templates, template types etc
 
-  * Zim
-
   * Guiceyloops
     * Document dbcleaner and how to configure
     * Document single database example

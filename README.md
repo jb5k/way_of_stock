@@ -36,6 +36,7 @@ point for using the tools within the context of our projects.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 * [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
 * [Postgres](InstallPostgres.md): Postgres database server.
+* [Zim](Zim.md): Tool to automate changes to source code repositories.
 
 ## Learning Goals
 
