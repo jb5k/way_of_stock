@@ -1,84 +1,32 @@
-New Computer Checklist
-======================
+# New Computer Checklist
 
-Create User
------------
-Settings | User Accounts
+* Create User: Goto "Settings | User Accounts"
+* Install Chrome: [Download](http://www.google.com/chrome/).  Save to disk and open with Software Centre.
+* Git: See [SetupGit.md](SetupGit.md).
+* Java 7: See [InstallJava.md](InstallJava.md).
+* Java 8: See [InstallJava.md](InstallJava.md).
+* Intellij Idea: See [InstallIntellijIDEA.md](InstallIntellijIDEA.md).
+* Ruby: See [InstallRuby.md](InstallRuby.md).
+* Buildr: See [InstallGemDependencies.md](InstallGemDependencies.md).
+* Payara: See [InstallGlassFish.md](InstallGlassFish.md).
+* NodeJS: See [HowToNodeJS.md](HowToNodeJS.md).
+* Postgres: See [InstallPostgres.md](InstallPostgres.md).
+* LibreOffice: Already installed by default.
+* VPN: Use Ubuntu built-in VPN client.
+* Keepass: See [InstallKeePass.md](InstallKeePass.md).
+* Bookmarks: Add [Slack](http://todo)
 
-Chrome
-------
-[Download](http://www.google.com/chrome/).  Save to disk and open with Software Centre.
+## VPN Issues
 
-Git
----
-Use Software Centre.
+To ensure the DNS behaves correctly when connected to the FEM VPN, you are forced to disable DNSMasq. To do this
+you edit network configuration via:
 
-Java 7
-------
-See [InstallJava.md](./InstallJava.md).
+    $ gksu gedit /etc/NetworkManager/NetworkManager.conf
 
-Java 8
-------
-See [InstallJava.md](./InstallJava.md), except use:
+And comment out dnsmasq so that it looks like:
 
-    $ sudo apt-get install oracle-java8-installer
-    
-Currently only required for ARENA development.
+    #dns=dnsmasq
 
-Intellij Idea
--------------
-See [InstallIntellijIDEA.md](./InstallIntellijIDEA.md).
+And restart the network manager via:
 
-Ruby
-----
-
-See [InstallRuby.md](./InstallRuby.md).
-
-Buildr
-------
-See [InstallGemDependencies.md](./InstallGemDependencies.md).
-
-Payara
-------
-See [InstallGlassFish.md](./InstallGlassFish.md).
-
-Postgres Client Libraries
--------------------------
-See [InstallPg.md](./InstallPg.md).
-
-NodeJS
-------
-See [HowToNodeJS.md](./HowToNodeJS.md).
-
-Postgres DB
------------
-Install the vanilla server:
-
-    $ sudo apt-get install postgresql postgresql-contrib
-    
-OR: install the server with postgis enabled:
-
-    $ sudo apt-get install postgresql-9.3-postgis-2.1
-
-Create a user that will be used to interact with the database:
-    
-    $ sudo -u postgres psql postgres
-    $ CREATE ROLE "stock-dev" WITH PASSWORD 'letmein' CREATEDB SUPERUSER LOGIN;
-  
-Install the client "pgAdmin III" from the Software Centre.
-
-LibreOffice
-------------
-Already installed by default.
-
-VPN
----
-Use Ubuntu built-in VPN client.
-
-Keepass 2.30
-------------
-[Download](http://keepass.info/download.html)
-
-Bookmarks
----------
-[Slack](http://todo)
+    $ sudo service network-manager restart
