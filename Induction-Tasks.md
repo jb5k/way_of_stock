@@ -35,3 +35,4 @@
 
 * Create account on Jenkins
 * NAFC PEM file
+* Set up SSH tunnel config.
