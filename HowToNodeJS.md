@@ -7,7 +7,7 @@ tooling such as the Less compiler.
 
 ### OSX Instructions
 
-Under OSX with [Homebrew](http://mxcl.github.com/homebrew/) installed you can install via;
+Under OSX with [Homebrew](InstallHomebrew.md) installed you can install via;
 
     $ brew update
     $ brew install node
