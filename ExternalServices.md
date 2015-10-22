@@ -8,10 +8,10 @@ Links to stuff we use that someone else provides
 * [Public Github](http://github.com)
 * [Slack](https://stocksoftware.slack.com/)
 * [Jira](https://stocksoftware.atlassian.net)
-* Public Hosted Chef
-* Artifactory
-* New Relic
-* Papertrail
+* [Public Hosted Chef](https://manage.chef.io)
+* [Artifactory](https://stocksoftware.artifactoryonline.com/stocksoftware/webapp)
+* [New Relic](https://newrelic.com)
+* [Papertrail](https://papertrailapp.com)
 
 ## DELWP Services
 
@@ -25,5 +25,4 @@ Links to stuff we use that someone else provides
 
 ## Arena Services
 
-* Jenkins
-* Keycloak
+* [Jenkins](http://ci.stocksoftware.com.au)
