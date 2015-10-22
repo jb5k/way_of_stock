@@ -2,7 +2,7 @@
 
 * Create User:
 * Install Homebrew: [InstallHomebrew.md](InstallHomebrew.md).
-* Install Chrome: [Download](http://www.google.com/chrome/).
+* Install Chrome: `brew cask install google-chrome`.
 * Git: See [SetupGit.md](SetupGit.md).
 * Java 7: See [InstallJava.md](InstallJava.md).
 * Java 8: See [InstallJava.md](InstallJava.md).
@@ -12,11 +12,11 @@
 * Payara: See [InstallGlassFish.md](InstallGlassFish.md).
 * NodeJS: See [HowToNodeJS.md](HowToNodeJS.md).
 * Postgres: See [InstallPostgres.md](InstallPostgres.md).
-* LibreOffice: ?
+* LibreOffice: `brew cask install libreoffice`
 * VPN: [Download Cisco AnyConnect mobility client 3.1](https://s3-ap-southeast-2.amazonaws.com/stocksoftware-installers/CiscoAnyConnect/mac/anyconnect-macosx-i386-3.1.06079-k9.dmg).
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
-* Slack:
-* Source Tree:
+* Slack: `brew cask install slack`
+* Source Tree: `brew cask install sourcetree`
 * Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
 
 ## Set up Localhost (Mac only)
