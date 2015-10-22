@@ -1,0 +1,16 @@
+# Configuration for knife aka chef stuff!
+
+
+## Bash shell expansion
+Bash expansions for common knife commands make your life easier!
+
+    kcb   => knife cookbook upload ...
+    kdba  => knife data bag from file application ...
+    kdbd  => knife data bag from file databases ...
+    kdbs  => knife data bag from file services ...
+    kdbt  => knife data bag from file template ...
+    kdiff => xpiceweasel --diff
+
+The script can be downloaded from [knife.sh](knife.sh). The contents can be appended to the `~/.bashrc` script
+or you can place the script in a directory (i.e. `~/.bash.d`) and source it from the `~/.bashrc` script (i.e.
+append `source ~/.bash.d/knife.sh` to the `~/.bashrc` script).
