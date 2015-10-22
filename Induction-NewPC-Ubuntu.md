@@ -14,7 +14,7 @@
 * LibreOffice: Already installed by default.
 * VPN: Use Ubuntu built-in VPN client.
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
-* Bookmarks: Add [Slack](http://todo)
+* Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
 
 ## VPN Issues
 

@@ -17,7 +17,7 @@
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
 * Slack:
 * Source Tree:
-* Bookmarks: Add [Slack](http://todo)
+* Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
 
 ## Set up Localhost (Mac only)
 
