@@ -1,6 +1,7 @@
 # New Computer Checklist
 
 * Create User:
+* Install Homebrew: [InstallHomebrew.md](InstallHomebrew.md).
 * Install Chrome: [Download](http://www.google.com/chrome/).
 * Git: See [SetupGit.md](SetupGit.md).
 * Java 7: See [InstallJava.md](InstallJava.md).
