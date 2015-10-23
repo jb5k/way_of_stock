@@ -9,6 +9,8 @@ alias kdbd=data_bag_database
 alias kdbs=data_bag_services
 alias kdbt=data_bag_template
 alias kcb='knife cookbook upload'
+alias kenv='knife environment from file'
+alias kdiff='ruby xpiceweasel.rb --diff'
 
 _database() {
    local word=${COMP_WORDS[COMP_CWORD]}
@@ -40,4 +42,9 @@ _cookbook() {
 }
 complete -F _cookbook kcb
 
-alias kdiff='ruby xpiceweasel.rb --diff'
+_environment() {
+   local word=${COMP_WORDS[COMP_CWORD]}
+   COMPREPLY=( $( compgen -W "`find environments/*.json -exec basename {} \;`" -- $word ) )
+}
+complete -F _environment kenv
+
