@@ -1,5 +1,8 @@
 # Documentation development
 
+* Rename all files from pattern HowToX and InstallX and SetupX to just X. Make sure to
+  update all the READMEs in projects that braided in Zim.
+
 * Architectural Overview
     * Boundary-Control-Entity layers
         * Interactions with External Systems
@@ -11,7 +14,7 @@
 * Environment Setup
     * sql server and initial dev user
 
-* Release process
+* Release process (Started in ApplicationRelease)
     * concept of applications in databags, templates, template types etc
 
 * Guiceyloops
