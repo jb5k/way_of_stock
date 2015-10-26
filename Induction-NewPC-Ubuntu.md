@@ -27,6 +27,15 @@ And comment out dnsmasq so that it looks like:
 
     #dns=dnsmasq
 
-And restart the network manager via:
+You also need to update the search path for DNS if you want to use short names. Do this by
+editing the configuration:
+
+    $ sudo vi /etc/resolvconf/resolv.conf.d/tail
+
+So that it looks like:
+
+    search fem.vic.gov.au femnp.vic.gov.au nre.vic.gov.au fire.dse.vic.gov.au dse.vic.gov.au internal.vic.gov.au
+
+Finally, restart the network manager via:
 
     $ sudo service network-manager restart
