@@ -12,10 +12,15 @@
         * Entity Examples: Soap service, Database Service, Mail Service etc
 
 * Environment Setup
+    * Setting simple push mode for git
     * sql server and initial dev user
     * virtualbox (via cask on Mac)
     * dockertoolbox (via cask on Mac)
     * Completions under OSX - `brew install homebrew/completions/docker-completion` && `brew install homebrew/completions/docker-machine-completion`
+
+* Intellij
+    * Add colouring for buildfile in ide 
+    * Setting default thread debug behaviour 
 
 * Release process (Started in ApplicationRelease)
     * concept of applications in databags, templates, template types etc
