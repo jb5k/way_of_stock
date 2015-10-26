@@ -12,7 +12,6 @@
         * Entity Examples: Soap service, Database Service, Mail Service etc
 
 * Environment Setup
-    * Setting simple push mode for git
     * sql server and initial dev user
     * virtualbox (via cask on Mac)
     * dockertoolbox (via cask on Mac) (Incorporate http://michaelheap.com/docker-machine-on-osx/)
