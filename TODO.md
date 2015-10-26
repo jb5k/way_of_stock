@@ -13,6 +13,9 @@
 
 * Environment Setup
     * sql server and initial dev user
+    * virtualbox (via cask on Mac)
+    * dockertoolbox (via cask on Mac)
+    * Completions under OSX - `brew install homebrew/completions/docker-completion` && `brew install homebrew/completions/docker-machine-completion`
 
 * Release process (Started in ApplicationRelease)
     * concept of applications in databags, templates, template types etc
