@@ -143,3 +143,7 @@ TODO
 ### Monitor Template
 
 TODO
+
+### Domain Template
+
+TODO
