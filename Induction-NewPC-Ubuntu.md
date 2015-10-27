@@ -16,6 +16,19 @@
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
 * Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
 
+## Setting up the DELWP VPN
+
+Install the openconnect network manager
+
+    $ sudo apt-get install network-manager-openconnect-gnome
+
+Add a VPN
+
+     Connection Name: FEM
+     Gateway: vpn.fem.vic.gov.au
+     Username/Pwd: your fireweb details
+
+
 ## VPN Issues
 
 To ensure the DNS behaves correctly when connected to the FEM VPN, you are forced to disable DNSMasq. To do this
