@@ -36,6 +36,19 @@ address for specific projects, you can run the command without the `--global` op
 If the email used in a commit matches a verified GitHub or GitHub Enterprise user account, the account's username
 is used on website, instead of the username set by Git.
 
+## Configure prompt-less password for acccesing repositories over http
+
+When attempting to clone or pull a repository over http or https you will normally need to enter your password
+at a prompt. This can be quite annoying after a while so instead you can add configuration to the ``~/.netrc``
+file that will supply credentials. It is useful to add it for both the internal GitHub repository as well as the
+public git hub repository.
+
+Add the following snippet to the ``~/.netrc`` file creating it if necessary and updating the username and password
+as appropriate.
+
+    machine github.com login myusername password mypassword
+    machine git.fire.dse.vic.gov.au login myinternalusername password myinternalpassword
+
 ## Turning off the "helpful" popup when using git gui
 
 When running `git gui` you will almost always get a warning that there is too many loose objects and a gc
