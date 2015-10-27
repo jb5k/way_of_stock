@@ -40,7 +40,7 @@ following instructions with the version that the project actually uses.
 
 Under Linux, first install required dependencies:
 
-    $ sudo apt-get install -y libssl-dev libreadline-dev zlib1g-dev
+    $ sudo apt-get install -y libxml2-dev libssl-dev libreadline-dev zlib1g-dev
 
 To install ruby, it is as simple as:
 
