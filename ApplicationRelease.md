@@ -123,6 +123,11 @@ configuration which would load the above template named ``glassfish_myapp_v6``.
       }
 ```
 
+Note: There are some scenarios where a template is not associated with an application or a facet but we have not
+settled on a concrete pattern by which we select the templates and versions to retrieve configuration from. An
+example of this is the domain _template type_ that can be blended into a GlassFish domain based on a hash that
+maps "application" keys to versions.
+
 ### GlassFish Template
 
 TODO
