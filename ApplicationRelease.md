@@ -17,7 +17,7 @@ Each application requires releases of multiple _facets_. For example a release m
 
 Each of these are represented by a separate _facet_. The ``dbt`` facet is responsible for updating the database
 server, the ``openmq`` facet is responsible for updating the message broker, the ``glassfish`` facet updates the
-GlassFish domain(s) and the ``monitor`` facet updates the monitoring system.
+GlassFish domain(s) and the ``monitor`` facet updates the monitoring system, etc.
 
 The applications are released using the [Chef](http://chef.io) system automation framework. We describe each
 application using a series of recipes and databags.
