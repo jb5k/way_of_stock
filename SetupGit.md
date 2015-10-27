@@ -15,7 +15,7 @@ Under OSX with [Homebrew](InstallHomebrew.md) installed you can install via;
 
 To install under linux we install the package via;
 
-    $ sudo apt-get install git
+    $ sudo apt-get install git git-gui
 
 ## Configuring Basic Settings
 
@@ -42,6 +42,16 @@ When running `git gui` you will almost always get a warning that there is too ma
 is required. This message can be disabled by running the following command:
 
     $ git config --global gui.gcwarning false
+
+## Set push.default configuration
+
+Historically the config _push.default_ was set to _matching_ which means that git will push local branches
+to the remote branches that already exist with the same name. This means that when you type `git push` you
+could be pushing any number of branches and not just the current branch. This can cause a significant amount
+of confusion and thus the default was changed to _simple_. You should update your configuration to make sure
+it is set to the new default via:
+
+    $ git config --global push.default simple
 
 ## Setting up Git Global Ignores
 
