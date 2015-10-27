@@ -28,7 +28,6 @@ Add a VPN
      Gateway: vpn.fem.vic.gov.au
      Username/Pwd: your fireweb details
 
-
 ## VPN Issues
 
 To ensure the DNS behaves correctly when connected to the FEM VPN, you are forced to disable DNSMasq. To do this
