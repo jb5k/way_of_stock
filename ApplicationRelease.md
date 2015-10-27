@@ -13,6 +13,7 @@ Each application requires releases of multiple _facets_. For example a release m
 * Adding or updating destinations on a message broker.
 * Deploying a ``.war`` file (or other deployable unit) to [GlassFish](InstallGlassFish.md).
 * Updating the monitoring system with new checks and probes etc.
+* Updating load balancer with new routes.
 
 Each of these are represented by a separate _facet_. The ``dbt`` facet is responsible for updating the database
 server, the ``openmq`` facet is responsible for updating the message broker, the ``glassfish`` facet updates the
