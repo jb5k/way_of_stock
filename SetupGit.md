@@ -15,7 +15,7 @@ Under OSX with [Homebrew](InstallHomebrew.md) installed you can install via;
 
 To install under linux we install the package via;
 
-    $ sudo apt-get install git
+    $ sudo apt-get install git git-gui
 
 ## Configuring Basic Settings
 
