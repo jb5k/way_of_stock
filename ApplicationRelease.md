@@ -7,7 +7,7 @@ process.
 
 ## Concepts
 
-Each application requires releases of multiple _facets_. For eaxmple a release may involve:
+Each application requires releases of multiple _facets_. For example a release may involve:
 
 * Creating or migrating a database.
 * Adding or updating destinations on a message broker.
