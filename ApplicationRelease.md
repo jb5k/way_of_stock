@@ -30,7 +30,8 @@ item typically defines an object literal for each _facet_, a bag of application 
 * *type*: Unique key for the application.
 * *chef_environment*: The chef environment in which application instance is deployed.
 * *nodes*: An array of strings indicating the nodes and order in which the nodes are converged during a release.
-Note: This is only required due to inability of release process to determine these nodes automatically.
+Note: This is only required due to inability of release process to determine these nodes automatically and this
+requirement may be removed in a future release.
 * *enabled*: A flag set to true to indicate application should be deployed. If this key is not set, then the
 release process defaults it to true.
 
