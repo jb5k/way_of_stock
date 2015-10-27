@@ -77,7 +77,51 @@ An example of an application data bag:
 
 ## Templates
 
-TODO: templates, template types
+Templates are used as way of abstracting and reusing a chunk of configuration across multiple applications,
+environments or nodes. Consider the scenario where a application is deployed to multiple environments; development,
+uat, training and production. This application is likely to have similar glassfish configurations in each environment.
+In this scenario the common configuration could be abstracted out into a template. The _facet_ configuration in the 
+``applications`` data bag item for the application would then reference the template.
+
+Templates are stored in the ``templates`` data bag and must have the following top level keys. 
+
+* *id*: A unique ID for the data bag that matches the file name. By convention we use "*template_type*_*application*_*version*".
+* *application*: Unique key for the application.
+* *template_type*: A key identifying the _type_ of the template, usually the same name as the associated facet.
+* *version*: A unique key within the scope of *application* and *template_type* that identifies a particular version
+of the template. This is usually a monotonically increasing number.
+
+The templates also have 1 or more additional top level keys that contain the shared configuration. These subkeys
+are defined by the template type.
+
+```json
+{
+  "id": "glassfish_myapp_v6",
+  "application": "myapp",
+  "template_type": "glassfish",
+  "version": "6",
+  "config": {
+    ...
+  }
+}
+```
+
+Each facet within the application instance identifies which templates to use based on the presence of the top level
+``type`` key and the sub-key ``template_version`` in the facet configuration. Consider the following application
+configuration which would load the above template named ``glassfish_myapp_v6``.
+
+```json
+      {
+        "id": "myapp_development",
+        "type": "myapp",
+        ...
+        "glassfish": {
+          "template_version": "6",
+          ...
+        },
+        ...
+      }
+```
 
 ### GlassFish Template
 
