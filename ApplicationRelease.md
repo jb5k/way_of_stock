@@ -35,7 +35,7 @@ requirement may be removed in a future release.
 * *enabled*: A flag set to true to indicate application should be deployed. If this key is not set, then the
 release process defaults it to true.
 
-An example of an application data bag
+An example of an application data bag:
 
 ```json
       {
