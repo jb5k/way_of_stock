@@ -211,6 +211,27 @@ TODO
 
 ### Monitor Template
 
+The monitor template is the template used by our monitoring system (Sauron) to determine how to publish
+the endpoints that need to be monitored. It is an application facet.
+
+#### Facet Configuration
+
+The template requires no additional configuration other than the ``template_version`` key. For example:
+
+```json
+{
+  ...
+  "type": "myapp",
+  ...
+  "monitor": {
+    "template_version": "3"
+  },
+  ...
+}
+```
+
+#### Template Structure
+
 TODO
 
 ### Domain Template
