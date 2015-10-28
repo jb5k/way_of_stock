@@ -63,7 +63,6 @@ An example of an application data bag:
     "instance_key": "appsdb",
     "database_key": "MYAPP",
     "major_version": 3,
-    "enforce_version_match": true,
     "username": "myapp_rw",
     "password": "myapp_password",
     "template_version": "3",
@@ -136,7 +135,7 @@ The GlassFish templates are used by applications and require referencing from ap
 
 The facet should include the following additional keys:
 
-* *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be installed.
+* *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be deployed to.
 
 The configuration of the facet should look something like:
 
@@ -202,6 +201,58 @@ However most applications perform other configuration such as configuration of j
 at the existing recipes for inspiration.
 
 ### Dbt Template
+
+Dbt is our database automation infrastructure and the facet is used to configure each applications individual
+database. Each application that contains a database publishes a dbt jar that contains all the scripts to create
+our databases.
+
+#### Facet Configuration
+
+The facet supports the following additional keys:
+
+* *instance_key*: This specifies a symbolic key identifying which particular database server the database
+should be created on.
+* *database_name*: This _optional_ key specifies the name of the database created. If not specified the
+database name defaults to the value "*database_key*_*major_version*". It should only be specified when *database_key*
+is not specified.
+* *database_key*: This _optional_ key specifies the a unique key for the database from which the database name is
+derived. It should only be specified when *database_name* is not specified.
+* *major_version*: This identifies _major_ version of the database. The major version should match the major_version
+encoded into the database jar. A change of the major version requires a recreation of the database.
+* *enforce_version_match*: A boolean flag indicating whether whether a difference between the mahjor_version defined
+in the facet configuration and the major_version encoded in the dbt jar should result in a failed chef run. Defaults
+to true if key unspecified.
+* *username*: The username of the application level database user.
+* *password*: The password of the application level database user.
+* *import_on_create*: A flag indicating whether the dbt import process should run when the database is created.
+Defaults to false.
+* *last_database*: The _optional_ key that specifies the database to import from. Must only be set if *import_on_create*
+is true. If not set defaults to "*database_key*_*major_version - 1*"
+
+* *collation*: This _optional_ key defines the database collation for sql server and defaults to 'SQL_Latin1_General_CP1_CS_AS'.
+* *priority*: This _optional_ key is used to order the database management operations. Lower values will
+result in database being sorted earlier. The value defaults 100 if not specified.
+
+```json
+{
+  ...
+  "type": "myapp",
+  ...
+  "dbt": {
+    "priority": 40,
+    "instance_key": "appsdb",
+    "database_key": "MYAPP",
+    "major_version": 3,
+    "username": "myapp_rw",
+    "password": "myapp_password",
+    "template_version": "3",
+    "import_on_create": true
+  },
+  ...
+}
+```
+
+#### Template Structure
 
 TODO
 
