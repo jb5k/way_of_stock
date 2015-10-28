@@ -40,3 +40,19 @@ The buildfile requires the following to deploy Greenmail when running through Id
                                       :server_name => 'Payara 4.1',
                                       :exploded => [project.name],
                                       :packaged => {:greenmail => :greenmail_server})
+
+## Thunderbird
+
+A mail client is required to retrieve emails sent to Greenmail.  Mozilla Thunderbird is recommended as it is free, self-contained and available for all platforms, but any mail client will work using the same POP3 settings.
+ 
+To add a new mail account (in v38.3.0 for Ubuntu 14.04):
+
+1. Menu: Edit | Account Settings
+2. Account Actions | Add Mail Account
+3. Fill in the following: Your name = irrelevant, Email address = <email_address>, Password = <email_address>
+4. Continue
+5. Manual Config (Thunderbird will attempt to determine the email provider from the address and fail miserably).
+6. Incoming: Type = POP3, Server hostname = localhost, Port = 10110, SSL = None, Authentication = Normal password
+7. Outgoing: SMTP, Server hostname = localhost, Port = 10025, SSL = None, Authentication = No authentication (it won't be necessary to send any emails from this account but Thunderbird requires settings to be included)
+8. Username: <email_address>
+9. Re-test.  This will only succeed if you have a running instance of Greenmail and have sent an email to that address to create the account.  Remember emails and accounts are only kept in memory so server restarts will clear them.
