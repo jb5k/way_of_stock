@@ -35,6 +35,7 @@ and processes we use day to day.
     * Configure domgen buildr tasks to generate source.
     * Replace service interface with domgen defined service.
     * Use domgen generated base ejb test for service.
+    * Update jenkins job definition to collect tests
 
 # Stage 4
 
