@@ -18,8 +18,8 @@
     * Completions under OSX - `brew install homebrew/completions/docker-completion` && `brew install homebrew/completions/docker-machine-completion`
 
 * Intellij
-    * Add colouring for buildfile in ide 
-    * Setting default thread debug behaviour 
+    * Add colouring for buildfile in ide
+    * Setting default thread debug behaviour
 
 * Release process (Started in ApplicationRelease)
     * concept of applications in databags, templates, template types etc
