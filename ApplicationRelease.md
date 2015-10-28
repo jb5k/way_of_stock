@@ -80,10 +80,10 @@ An example of an application data bag:
 Templates are used as way of abstracting and reusing a chunk of configuration across multiple applications,
 environments or nodes. Consider the scenario where a application is deployed to multiple environments; development,
 uat, training and production. This application is likely to have similar glassfish configurations in each environment.
-In this scenario the common configuration could be abstracted out into a template. The _facet_ configuration in the 
+In this scenario the common configuration could be abstracted out into a template. The _facet_ configuration in the
 ``applications`` data bag item for the application would then reference the template.
 
-Templates are stored in the ``templates`` data bag and must have the following top level keys. 
+Templates are stored in the ``templates`` data bag and must have the following top level keys.
 
 * *id*: A unique ID for the data bag that matches the file name. By convention we use "*template_type*_*application*_*version*".
 * *application*: Unique key for the application.
