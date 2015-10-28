@@ -31,9 +31,13 @@ Add a VPN
 ## VPN Issues
 
 To ensure the DNS behaves correctly when connected to the FEM VPN, you are forced to disable DNSMasq. To do this
-you edit network configuration via:
+first install gksu:
 
-    $ gksu gedit /etc/NetworkManager/NetworkManager.conf
+    $ sudo apt-get install gksu
+
+Then edit network configuration via:
+
+    $ sudo gksu gedit /etc/NetworkManager/NetworkManager.conf
 
 And comment out dnsmasq so that it looks like:
 
