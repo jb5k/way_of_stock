@@ -207,6 +207,27 @@ TODO
 
 ### OpenMQ Template
 
+OpenMQ is the message broker in use and this OpenMQ template is used as an application facet. The template/facet
+allows you to declare queues, topics, access_rules and accounts to be added to the message broker.
+
+#### Facet Configuration
+
+The template requires no additional configuration other than the ``template_version`` key. For example:
+
+```json
+{
+  ...
+  "type": "myapp",
+  ...
+  "openmq": {
+    "template_version": "6"
+  },
+  ...
+}
+```
+
+#### Template Structure
+
 TODO
 
 ### Monitor Template
