@@ -38,41 +38,41 @@ release process defaults it to true.
 An example of an application data bag:
 
 ```json
-      {
-        "id": "myapp_development",
-        "type": "myapp",
-        "chef_environment": "development",
-        "nodes": [
-          "DEVmq.example.com",
-          "DEVsql.example.com",
-          "DEVappserver.example.com"
-        ],
-        "enabled": "true",
-        "monitor": {
-          "template_version": "2"
-        },
-        "glassfish": {
-          "domain": "appserver",
-          "template_version": "6"
-        },
-        "openmq": {
-          "template_version": "5"
-        },
-        "dbt": {
-          "priority": 40,
-          "instance_key": "appsdb",
-          "database_key": "MYAPP",
-          "major_version": 3,
-          "enforce_version_match": true,
-          "username": "myapp_rw",
-          "password": "myapp_password",
-          "template_version": "3",
-          "import_on_create": true
-        },
-        "config": {
-          "plugin": "myapp-extender"
-        }
-      }
+{
+  "id": "myapp_development",
+  "type": "myapp",
+  "chef_environment": "development",
+  "nodes": [
+    "DEVmq.example.com",
+    "DEVsql.example.com",
+    "DEVappserver.example.com"
+  ],
+  "enabled": "true",
+  "monitor": {
+    "template_version": "2"
+  },
+  "glassfish": {
+    "domain": "appserver",
+    "template_version": "6"
+  },
+  "openmq": {
+    "template_version": "5"
+  },
+  "dbt": {
+    "priority": 40,
+    "instance_key": "appsdb",
+    "database_key": "MYAPP",
+    "major_version": 3,
+    "enforce_version_match": true,
+    "username": "myapp_rw",
+    "password": "myapp_password",
+    "template_version": "3",
+    "import_on_create": true
+  },
+  "config": {
+    "plugin": "myapp-extender"
+  }
+}
 ```
 
 ## Templates
@@ -111,16 +111,16 @@ Each facet within the application instance identifies which templates to use bas
 configuration which would load the above template named ``glassfish_myapp_v6``.
 
 ```json
-      {
-        ...
-        "type": "myapp",
-        ...
-        "glassfish": {
-          "template_version": "6",
-          ...
-        },
-        ...
-      }
+{
+  ...
+  "type": "myapp",
+  ...
+  "glassfish": {
+    "template_version": "6",
+    ...
+  },
+  ...
+}
 ```
 
 Note: There are some scenarios where a template is not associated with an application or a facet but we have not
