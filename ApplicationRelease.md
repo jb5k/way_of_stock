@@ -112,7 +112,7 @@ configuration which would load the above template named ``glassfish_myapp_v6``.
 
 ```json
       {
-        "id": "myapp_development",
+        ...
         "type": "myapp",
         ...
         "glassfish": {
