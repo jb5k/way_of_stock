@@ -219,19 +219,29 @@ is not specified.
 derived. It should only be specified when *database_name* is not specified.
 * *major_version*: This identifies _major_ version of the database. The major version should match the major_version
 encoded into the database jar. A change of the major version requires a recreation of the database.
-* *enforce_version_match*: A boolean flag indicating whether whether a difference between the mahjor_version defined
+* *enforce_version_match*: A boolean flag indicating whether whether a difference between the major_version defined
 in the facet configuration and the major_version encoded in the dbt jar should result in a failed chef run. Defaults
 to true if key unspecified.
+* *recreate_on_minor_version_delta*: A boolean flag indicating whether a change in minor version should force a
+recreate of the database. Defaults to false. Is only useful to use in the development environment.
 * *username*: The username of the application level database user.
 * *password*: The password of the application level database user.
 * *import_on_create*: A flag indicating whether the dbt import process should run when the database is created.
 Defaults to false.
 * *last_database*: The _optional_ key that specifies the database to import from. Must only be set if *import_on_create*
 is true. If not set defaults to "*database_key*_*major_version - 1*"
-
 * *collation*: This _optional_ key defines the database collation for sql server and defaults to 'SQL_Latin1_General_CP1_CS_AS'.
 * *priority*: This _optional_ key is used to order the database management operations. Lower values will
 result in database being sorted earlier. The value defaults 100 if not specified.
+* *linked_databases*: This _optional_ key is a hash that maps a key to a database name. This mapping is supplied to
+dbt during the creation and import processes and is only used if dbt jar requires reference to another database.
+* *linked_application_databases*: This _optional_ key is a hash that maps a key to an application key. The application
+must have a dbt facet from which a database name is derived. This mapping is merged with the `linked_databases`
+configuration and passed to dbt during the creation and import processes.
+* *linked_service_databases*: This _optional_ key is a hash that maps a key to an service key. The service
+must be a database service from which a database name is extracted. This mapping is merged with the `linked_databases`
+configuration and passed to dbt during the creation and import processes.
+
 
 ```json
 {
