@@ -61,7 +61,6 @@ An example of an application data bag:
   "dbt": {
     "priority": 40,
     "instance_key": "appsdb",
-    "database_key": "MYAPP",
     "major_version": 3,
     "username": "myapp_rw",
     "password": "myapp_password",
@@ -216,7 +215,8 @@ should be created on.
 database name defaults to the value "*database_key*_*major_version*". It should only be specified when *database_key*
 is not specified.
 * *database_key*: This _optional_ key specifies the a unique key for the database from which the database name is
-derived. It should only be specified when *database_name* is not specified.
+derived. It should only be specified when *database_name* is not specified. If not specified it is derived from the
+constantized name of the application key.
 * *major_version*: This identifies _major_ version of the database. The major version should match the major_version
 encoded into the database jar. A change of the major version requires a recreation of the database.
 * *enforce_version_match*: A boolean flag indicating whether whether a difference between the major_version defined
@@ -251,7 +251,6 @@ configuration and passed to dbt during the creation and import processes.
   "dbt": {
     "priority": 40,
     "instance_key": "appsdb",
-    "database_key": "MYAPP",
     "major_version": 3,
     "username": "myapp_rw",
     "password": "myapp_password",
