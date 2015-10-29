@@ -9,7 +9,9 @@ Payara we currently use is `4.1.1.154 (Full Java EE)`.
 
 The product can be downloaded from [http://www.payara.co.uk/previous_releases](http://www.payara.co.uk/previous_releases).
 
-This should be downloaded and unzipped into the directory `~/Applications/payara-4.1.1.154`.
+This should be downloaded into the directory `~/Applications` and then run:
+
+    $ unzip payara-4.1.1.154.zip && mv payara41 payara-4.1.1.154
 
 Create a symlink called `payara` to the longer directory name.
 
