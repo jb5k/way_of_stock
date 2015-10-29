@@ -14,6 +14,7 @@
 * Environment Setup
     * sql server and initial dev user
     * virtualbox (via cask on Mac)
+        * Sharing Host VPN with VirtualBox guest - http://renier.morales-rodriguez.net/post/90674523562/sharing-host-vpn-with-virtualbox-guest
     * dockertoolbox (via cask on Mac) (Incorporate http://michaelheap.com/docker-machine-on-osx/)
     * Completions under OSX - `brew install homebrew/completions/docker-completion` && `brew install homebrew/completions/docker-machine-completion`
 
