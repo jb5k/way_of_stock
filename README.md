@@ -1,8 +1,12 @@
 # Way of Stock Software
 
 The purpose of this repository is to document the standard tools and processes that are used
-in Stock Software's projects. It is neither complete nor set in stone and it is expected to
+at Stock Software. It is neither complete nor set in stone and it is expected to
 evolve and be refined over time.
+
+## Business Tools and Resources
+
+* [Tide](HowToTide.md): Timesheet tool.
 
 ## Basic Host Setup
 
@@ -25,16 +29,17 @@ features but they likely to be required by many projects.
 * [Install GlassFish](InstallGlassFish.md)
 * [Install Docker](InstallDocker.md)
 
-## Essential Tools
+## Essential Development Tools
 
 The following documents describe some of the essential tools in use in our projects. They should give a starting
 point for using the tools within the context of our projects.
 
 * [Braid](HowToBraid.md): Vendor branch management tool.
 * [Buildr](HowToBuildr.md): Build automation tool.
+* [GreenMail](HowToGreenmail.md): An SMTP server that holds emails insteading of sending.
+* [KeePass](InstallKeePass.md): Password locker where shared passwords and credentials are stored.
 * [NodeJS](HowToNodeJS.md): Javascript runtime environment and ecosystem.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
-* [KeePass](InstallKeePass.md): Password locker where shared passwords and credentials are stored.
 * [Postgres](InstallPostgres.md): Postgres database server.
 * [Zim](Zim.md): Tool to automate changes to source code repositories.
 
