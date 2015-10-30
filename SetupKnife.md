@@ -1,12 +1,12 @@
 # Configuration for knife aka chef stuff!
 
-## Prerequisites 
+## Prerequisites
 sudo apt-get install libxslt-dev
 
 Clone the infrastructure project
-    
+
     bundle install
-    
+
 ## DELWP: Register as a client
 Browse to http://chef
 
@@ -40,5 +40,3 @@ To converge a node
 
     ruby xpiceweasel --converge NODENAME
     ruby xpiceweasel --converge NODENAME | bash
-    
-   

@@ -44,7 +44,7 @@ The buildfile requires the following to deploy Greenmail when running through Id
 ## Thunderbird
 
 A mail client is required to retrieve emails sent to Greenmail.  Mozilla Thunderbird is recommended as it is free, self-contained and available for all platforms, but any mail client will work using the same POP3 settings.
- 
+
 To add a new mail account (in v38.3.0 for Ubuntu 14.04):
 
 1. Menu: Edit | Account Settings
