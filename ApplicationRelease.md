@@ -22,9 +22,9 @@ GlassFish domain(s) and the ``monitor`` facet updates the monitoring system, etc
 The applications are released using the [Chef](http://chef.io) system automation framework. We describe each
 application using a series of recipes and databags.
 
-The application is primarily defined in an application data bag item in the ``applications`` data bag. The data bag
+The application's configuration within a environment is primarily defined in an application data bag item in the ``applications`` data bag. The data bag
 item typically defines an object literal for each _facet_, a bag of application specific configuration under the key
-``config`` as well as the following top level keys.
+``config`` as well as the following top level keys. Configuration common to all environments is defined in [Templates][], described further down.
 
 * *id*: A unique ID for the data bag that matches the file name. By convention we use "*type*_*chef_environment*".
 * *type*: Unique key for the application.
