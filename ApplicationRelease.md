@@ -227,7 +227,7 @@ recreate of the database. Defaults to false. Is only useful to use in the develo
 * *username*: The username of the application level database user.
 * *password*: The password of the application level database user.
 * *import_on_create*: A flag indicating whether the dbt import process should run when the database is created.
-Defaults to false.
+Defaults to true.
 * *last_database*: The _optional_ key that specifies the database to import from. Must only be set if *import_on_create*
 is true. If not set defaults to "*database_key*_*major_version - 1*"
 * *collation*: This _optional_ key defines the database collation for sql server and defaults to 'SQL_Latin1_General_CP1_CS_AS'.
