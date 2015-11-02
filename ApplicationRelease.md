@@ -192,7 +192,6 @@ A sample template that includes the minimal configuration is:
 A minimal recipe ``myapp_v6`` added to the ``mycookbook`` cookbook should look something like:
 
 ```ruby
-RealityForge::Application.load_application_data(node, 'myapp')
 RealityForge::GlassFish.define_base_deployable(node, 'myapp')
 ```
 
