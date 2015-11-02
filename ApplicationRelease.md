@@ -224,7 +224,7 @@ in the facet configuration and the major_version encoded in the dbt jar should r
 to true if key unspecified.
 * *recreate_on_minor_version_delta*: A boolean flag indicating whether a change in minor version should force a
 recreate of the database. Defaults to false. Is only useful to use in the development environment.
-* *username*: The username of the application level database user.
+* *username*: The username of the application level database user. If not set defaults to "*application_key*_rw".
 * *password*: The password of the application level database user.
 * *import_on_create*: A flag indicating whether the dbt import process should run when the database is created.
 Defaults to true.
