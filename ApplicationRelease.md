@@ -138,6 +138,15 @@ The facet should include the following additional keys:
 * *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
+* *publish_endpoints*: By default the automation will publish the application urls and endpoints to the service
+directory. This optional configuration key allows the operator to disable this publishing by setting it to `false`.
+This is done when there is more complex logic surrounding the publishing of the service.
+* *endpoints*: This optional key provides a mechanism for adding additional attributes to the service publication. The
+values are interpolated before adding them as attributes. The following values can bve interpolated:
+    * `{{internal_url}}`: The url to the application for accessing by internal applications and users.
+    * `{{public_url}}`: The url to the application for accessing by public applications and users.
+    * `{{internal_url}}`: The url to the root directory for accessing by internal applications and users.
+    * `{{public_url}}`: The url to the root directory for accessing by public applications and users.
 
 The configuration of the facet should look something like:
 
@@ -192,13 +201,8 @@ A sample template that includes the minimal configuration is:
 }
 ```
 
-A minimal recipe ``myapp_v6`` added to the ``mycookbook`` cookbook should look something like:
-
-```ruby
-RealityForge::GlassFish.define_base_deployable(node, 'myapp')
-```
-
-However most applications perform other configuration such as configuration of jdbc, mail or jms resources. Look
+A minimal recipe ``myapp_v6`` should be added to the ``mycookbook`` cookbook. It will typically be used to
+perform per-application customizations of jdbc, mail or jms resources (or file system resources). Look
 at the existing recipes for inspiration.
 
 ### Dbt Template
