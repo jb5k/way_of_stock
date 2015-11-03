@@ -135,6 +135,9 @@ The GlassFish templates are used by applications and require referencing from ap
 The facet should include the following additional keys:
 
 * *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be deployed to.
+* *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
+create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
+for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
 
 The configuration of the facet should look something like:
 
