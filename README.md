@@ -43,6 +43,12 @@ point for using the tools within the context of our projects.
 * [Postgres](Postgres.md): Postgres database server.
 * [Zim](Zim.md): Tool to automate changes to source code repositories.
 
+## Development Processes
+
+The documents describe in shorthand some of our development processes.
+
+* [Application Releases](ApplicationRelease.md): How we release our applications.
+
 ## Learning Goals
 
 Most people should be able to perform the basic tasks required by our projects. To start to promote this
