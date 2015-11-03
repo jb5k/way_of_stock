@@ -4,7 +4,7 @@
 source code bases. The tool allows you to write a small ruby script that makes changes to a local copy
 of the source code and push those changes to the remote repositories.
 
-To install it you use [Git](SetupGit.md) to checkout the source code to zim:
+To install it you use [Git](Git.md) to checkout the source code to zim:
 
     $ git clone git@git.fire.dse.vic.gov.au:fisg/zim.git
 

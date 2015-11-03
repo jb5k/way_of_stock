@@ -5,7 +5,7 @@ talks to SQL Server. It is primarily used by the `tiny_tds` gem dependency.
 
 ## OSX Instructions
 
-Under OSX with [Homebrew](InstallHomebrew.md) installed you can install via;
+Under OSX with [Homebrew](Homebrew.md) installed you can install via;
 
     $ brew update
     $ brew install freetds

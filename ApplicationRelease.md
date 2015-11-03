@@ -11,7 +11,7 @@ Each application requires releases of multiple _facets_. For example a release m
 
 * Creating or migrating a database.
 * Adding or updating destinations on a message broker.
-* Deploying a ``.war`` file (or other deployable unit) to [GlassFish](InstallGlassFish.md).
+* Deploying a ``.war`` file (or other deployable unit) to [GlassFish](GlassFish.md).
 * Updating the monitoring system with new checks and probes etc.
 * Updating load balancer with new routes.
 

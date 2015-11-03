@@ -1,7 +1,7 @@
 # Buildr
 
 [Apache Buildr](http://buildr.apache.org) is a ruby based build and automation tool. While local development
-tends to occur within the [Intellij IDEA](InstallIntellijIDEA.md) IDE, Buildr is used to automate the build on
+tends to occur within the [Intellij IDEA](IntellijIDEA.md) IDE, Buildr is used to automate the build on
 the build box. Buildr is also used to download project dependencies, generate IDE project files and many other
 local automation tasks.
 

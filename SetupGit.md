@@ -6,7 +6,7 @@ Git is likely already installed but if not, it will need to be installed.
 
 ### OSX Instructions
 
-Under OSX with [Homebrew](InstallHomebrew.md) installed you can install via;
+Under OSX with [Homebrew](Homebrew.md) installed you can install via;
 
     $ brew update
     $ brew install git
