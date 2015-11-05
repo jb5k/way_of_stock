@@ -139,6 +139,9 @@ The facet should include the following additional keys:
 create a jms connection factory resource named using the pattern "*application*/jms/ConnectionFactory". This key makes
 it possible for the operator to specify the actual resource name. Set this to null to disable the creation of the
 resource altogether.
+* *define_jms_destinations*: If an application has an openmq facet that defines destinations in the associated template
+then the glassfish facet will automatically create `admin_objects` for each destination based naming them using the
+convention "*application*/jms/*destination_jndi_name*". 
 * *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
