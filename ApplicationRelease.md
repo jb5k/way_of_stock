@@ -285,7 +285,11 @@ allows you to declare queues, topics, access_rules and accounts to be added to t
 
 #### Facet Configuration
 
-The template requires no additional configuration other than the ``template_version`` key. For example:
+The facet supports the following additional keys:
+
+* *username*: The username of the broker user. No user is created if not specified.
+* *password*: The password of the broker user. Must be null unless username is specified.
+
 
 ```json
 {
@@ -293,7 +297,9 @@ The template requires no additional configuration other than the ``template_vers
   "type": "myapp",
   ...
   "openmq": {
-    "template_version": "6"
+    "template_version": "6",
+    "username": "Myapp",
+    "password": "secret"
   },
   ...
 }
@@ -301,7 +307,43 @@ The template requires no additional configuration other than the ``template_vers
 
 #### Template Structure
 
-TODO
+The template has a single additional top level element named ``config`` that contains a chunk of configuration
+that is blended into the configuration of the domain. The structure of this configuration is not described anywhere
+and you will need to look at the existing examples for inspiration. However there are a few important sections that
+are common across our applications.
+
+There is an additional section ``destinations`` that contains details of all the destination that the application
+uses. The literal has the following keys:
+
+* *version*: The version of the destination to use. 
+* *permission*: The permission needed by the application. One of ``read``, ``write`` or ``readwrite``. 
+* *jndi_name*: The name of the jndi resource used in GlassFish etc. If not specified defaults to "**application**/jms/**destination_type**/**name**".
+
+A sample template is:
+
+```json
+{
+  "id": "openmq_myapp_v1",
+  "application": "myapp",
+  "template_type": "openmq",
+  "version": "1",
+  "destinations": {
+    "Myapp.MyQueue": {
+      "version": "2.0",
+      "permission": "write"
+    },
+    "Myapp.Comms": {
+      "version": "1.0",
+      "permission": "readwrite",
+      "jndi_name": "myapp/jms/queue/LegacyComms"
+    },
+    "Myapp.MyOtherQueue": {
+      "version": "1.0",
+      "permission": "write"
+    }
+  }
+}
+```
 
 ### Monitor Template
 
