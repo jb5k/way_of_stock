@@ -141,7 +141,7 @@ it possible for the operator to specify the actual resource name. Set this to nu
 resource altogether.
 * *define_jms_destinations*: If an application has an openmq facet that defines destinations in the associated template
 then the glassfish facet will automatically create `admin_objects` for each destination based naming them using the
-convention "*application*/jms/*destination_jndi_name*". 
+convention "*application*/jms/*destination_jndi_name*".
 * *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
@@ -315,8 +315,8 @@ are common across our applications.
 There is an additional section ``destinations`` that contains details of all the destination that the application
 uses. The literal has the following keys:
 
-* *version*: The version of the destination to use. 
-* *permission*: The permission needed by the application. One of ``read``, ``write`` or ``readwrite``. 
+* *version*: The version of the destination to use.
+* *permission*: The permission needed by the application. One of ``read``, ``write`` or ``readwrite``.
 * *jndi_name*: The name of the jndi resource used in GlassFish etc. If not specified defaults to "**application**/jms/**destination_type**/**name**".
 
 A sample template is:
