@@ -135,6 +135,29 @@ The GlassFish templates are used by applications and require referencing from ap
 The facet should include the following additional keys:
 
 * *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be deployed to.
+
+The configuration of the facet should look something like:
+
+```json
+{
+  ...
+  "type": "myapp",
+  ...
+  "glassfish": {
+    "domain": "mydomain",
+    "template_version": "6"
+  },
+  ...
+}
+```
+
+#### Template Structure
+
+The template has the following keys:.
+
+* *package_url*: A url to the war file for the application. The url may include the symbol ``$VERSION`` that is
+replaced with the actual version of the application when the template is blended into domain configuration.
+* *context_root*: The context root of the application. If not specified, it will default to ``/*application*``.
 * *jms_resource_override*: By default if an application is configured to use the openmq facet then the openmq facet will
 create a jms connection factory resource named using the pattern "*application*/jms/ConnectionFactory". This key makes
 it possible for the operator to specify the actual resource name. Set this to null to disable the creation of the
@@ -154,35 +177,12 @@ values are interpolated before adding them as attributes. The following values c
     * `{{public_url}}`: The url to the application for accessing by public applications and users.
     * `{{internal_url}}`: The url to the root directory for accessing by internal applications and users.
     * `{{public_url}}`: The url to the root directory for accessing by public applications and users.
+* *config*: This optional key provides a contains a chunk of configuration that is blended into the configuration
+of the domain. The structure of this configuration is not described anywhere and you will need to look at the existing
+examples for inspiration. 
 
-The configuration of the facet should look something like:
-
-```json
-{
-  ...
-  "type": "myapp",
-  ...
-  "glassfish": {
-    "domain": "mydomain",
-    "template_version": "6"
-  },
-  ...
-}
-```
-
-#### Template Structure
-
-The template has a single additional top level element named ``config`` that contains a chunk of configuration
-that is blended into the configuration of the domain. The structure of this configuration is not described anywhere
-and you will need to look at the existing examples for inspiration. However there are a few important sections that
-are common across our applications.
-
-Firstly most applications should define a deployable with a name that matches the name of the application type. While
-not strictly required this avoids the need to specify additional parameters at later steps. The template should also
-define a url for the deployable that may include the symbol ``$VERSION`` that is replaced with the actual version of
-the application when the template is blended into domain configuration. It is also highly likely that you need to
-define a _before_ hook that specifies a recipe to run prior to attempting to deploy the application. This allows
-the developer to write some basic ruby code that can customize the deploy for the application.
+The config section often has a _before_ hook that specifies a recipe to run prior to attempting to deploy the
+application. This allows the developer to write some basic ruby code that can customize the deploy for the application.
 
 A sample template that includes the minimal configuration is:
 
@@ -192,16 +192,11 @@ A sample template that includes the minimal configuration is:
   "application": "myapp",
   "template_type": "glassfish",
   "version": "6",
+  "package_url": "http://repo.example.com/releases/myapp/myapp/$VERSION/myapp-$VERSION.war",
   "config": {
     "recipes": {
       "before": {
         "mycookbook::myapp_v6": {}
-      }
-    },
-    "deployables": {
-      "myapp": {
-        "url": "http://repo.example.com/releases/myapp/myapp/$VERSION/myapp-$VERSION.war",
-        "context_root": "/myapp"
       }
     }
   }
