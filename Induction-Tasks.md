@@ -16,6 +16,7 @@
 * Get building access for 570 Bourke St
 * Create stocksoftware server account, and ssh keys
 * Create account on Tide
+* Learn how to use Tide
 * Create account on Slack
 * Create account on Github
 * Create account on Stock Jira
@@ -24,6 +25,7 @@
 * Create account on Artifactory
 * Create account on New Relic
 * Create account on Papertrail
+* Connect to Wifi (Thelxinoe)
 
 ### DELWP
 
@@ -37,6 +39,6 @@
 
 ### Arena
 
-* Create account on Jenkins
+* Create account on Jenkins (via Chef)
 * NAFC PEM file
 * Set up SSH tunnel config.
