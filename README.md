@@ -7,6 +7,7 @@ evolve and be refined over time.
 ## Business Tools and Resources
 
 * [Tide](Tide.md): Timesheet tool.
+* [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
 
 ## Basic Host Setup
 
@@ -37,7 +38,6 @@ point for using the tools within the context of our projects.
 * [Braid](Braid.md): Vendor branch management tool.
 * [Buildr](Buildr.md): Build automation tool.
 * [GreenMail](Greenmail.md): An SMTP server that holds emails insteading of sending.
-* [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
 * [NodeJS](NodeJS.md): Javascript runtime environment and ecosystem.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 * [Postgres](Postgres.md): Postgres database server.
