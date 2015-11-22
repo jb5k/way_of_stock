@@ -15,6 +15,7 @@
 * VPN: Use Ubuntu built-in VPN client.
 * Keepass: See [InstallKeePass.md](InstallKeePass.md).
 * Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
+* Printer: Add Ricoh-Aficio-MP-C4500 on 10.192.237.102.
 
 ## Setting up the DELWP VPN
 
