@@ -36,6 +36,10 @@ Then you need to install postgres with postgis:
 
     $ sudo apt-get install postgresql-9.3-postgis-2.1
 
+The ligpq-dev library is also required, as it is a gem dependency for building projects that use Postgres DB.
+
+    $ sudo apt-get install libpq-dev
+
 The _pgAdmin III_ client can be installed from the Ubuntu Software Centre.
 
 ## Starting
