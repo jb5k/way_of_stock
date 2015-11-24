@@ -20,6 +20,9 @@ the source directory the typical process is:
     $ braid diff vendor/docs/way_of_stock > ../path/to/way_of_stock/patch.diff
     $ cd ../path/to/way_of_stock
     $ git apply patch.diff
+    $ git add .
+    $ git commit -m "Added wonderful stuff"
+    $ git push
 
 After you have committed and pushed the changes to the source directory it is simply a matter of issuing another
 `braid update` command to update the braid. It is recommended that this is done immediately to avoid merge problems
