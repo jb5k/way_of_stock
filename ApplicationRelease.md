@@ -340,6 +340,10 @@ A sample template is:
 }
 ```
 
+#### Destination Definition
+
+TODO
+
 ### Monitor Template
 
 The monitor template is the template used by our monitoring system (Sauron) to determine how to publish
