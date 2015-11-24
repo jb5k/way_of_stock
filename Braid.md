@@ -27,3 +27,46 @@ the source directory the typical process is:
 After you have committed and pushed the changes to the source directory it is simply a matter of issuing another
 `braid update` command to update the braid. It is recommended that this is done immediately to avoid merge problems
 down the track.
+
+## Working with external repositories
+
+Several projects braid in external dependencies such as `domgen`, `dbt` and `rptman` that you will not have direct
+access to. The process to push changes back to these repositories is a little more complex. These repositories
+typically require changes to conform to the "GitHub way" and require a pull request to get changes into the upstream
+repository.
+
+The first step is to fork the source repository into you own account on GitHub and check out the fork to your local
+filesystem. In the checked out version of the project you need to add a new remote that references the upstream
+project. For domgen you would execute a command such as:
+
+    $ git remote add upstream https://github.com/realityforge/domgen.git
+
+Each time you want to generate a pull request you have to make sure your local master is up to date with the upstream
+master using the following commands:
+
+    $ git fetch upstream
+    $ git checkout master
+    $ git reset --hard upstream/master
+    $ git push master
+
+If you have ever made changes directly on master, you may need to force push the branch to reset master to the
+upstream. Any local changes to master will be lost. This can be done via:
+
+    $ git push -f master
+
+Then you need to create a local branch from master that includes the changes you want to merge into the upstream
+repository via:
+
+    $ git checkout -b my_domgen_enhancements
+
+Then apply the changes as per usual:
+
+    $ git apply patch.diff
+    $ git add .
+    $ git commit -m "Added wonderful stuff"
+    $ git push --set-upstream origin my_domgen_enhancements
+
+And then generate a pull request and work to getting it merged. This can be done through the GitHub website or can
+be done by using the hub command:
+
+    $ hub pull-request
