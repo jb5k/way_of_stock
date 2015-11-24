@@ -8,17 +8,17 @@ repositories like this repository. A project uses braid if it has a file named `
 
 For an existing project you can braid in a new project with a command similar to:
 
-    $ braid add https://github.com/realityforge/domgen.git vendor/plugins/domgen
+    $ braid add https://github.com/stocksoftware/way_of_stock.git vendor/docs/way_of_stock
 
 To update a repository that is already braided in use:
 
-    $ braid update vendor/plugins/domgen
+    $ braid update vendor/docs/way_of_stock
 
 Local changes can be made as usual to the braided in repository but when you want to push changes back to
 the source directory the typical process is:
 
-    $ braid diff vendor/plugins/domgen > ../path/to/domgen/patch.diff
-    $ cd ../path/to/domgen
+    $ braid diff vendor/docs/way_of_stock > ../path/to/way_of_stock/patch.diff
+    $ cd ../path/to/way_of_stock
     $ git apply patch.diff
 
 After you have committed and pushed the changes to the source directory it is simply a matter of issuing another
