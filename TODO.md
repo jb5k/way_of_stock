@@ -22,6 +22,8 @@
 
 * Release process (Started in ApplicationRelease)
     * concept of applications in databags, templates, template types etc
+    * How to converge
+    * How to define Jenkins jobs
 
 * Guiceyloops
     * Document dbcleaner and how to configure

@@ -179,7 +179,7 @@ values are interpolated before adding them as attributes. The following values c
     * `{{public_url}}`: The url to the root directory for accessing by public applications and users.
 * *config*: This optional key provides a contains a chunk of configuration that is blended into the configuration
 of the domain. The structure of this configuration is not described anywhere and you will need to look at the existing
-examples for inspiration. 
+examples for inspiration.
 
 The config section often has a _before_ hook that specifies a recipe to run prior to attempting to deploy the
 application. This allows the developer to write some basic ruby code that can customize the deploy for the application.
@@ -339,6 +339,10 @@ A sample template is:
   }
 }
 ```
+
+#### Destination Definition
+
+TODO
 
 ### Monitor Template
 
