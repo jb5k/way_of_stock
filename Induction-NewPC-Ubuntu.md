@@ -3,17 +3,17 @@
 * Create User: Goto "Settings | User Accounts"
 * Install Chrome: [Download](http://www.google.com/chrome/).  Save to disk and open with Software Centre.
 * Git: See [SetupGit.md](Git.md).
-* Java 7: See [InstallJava.md](InstallJava.md).
-* Java 8: See [InstallJava.md](InstallJava.md).
-* Intellij Idea: See [InstallIntellijIDEA.md](InstallIntellijIDEA.md).
-* Ruby: See [InstallRuby.md](InstallRuby.md).
-* Buildr: See [InstallGemDependencies.md](InstallGemDependencies.md).
-* Payara: See [InstallGlassFish.md](InstallGlassFish.md).
+* Java 7: See [InstallJava.md](Java.md).
+* Java 8: See [InstallJava.md](Java.md).
+* Intellij Idea: See [InstallIntellijIDEA.md](IntellijIDEA.md).
+* Ruby: See [InstallRuby.md](Ruby.md).
+* Buildr: See [InstallGemDependencies.md](GemDependencies.md).
+* Payara: See [InstallGlassFish.md](GlassFish.md).
 * NodeJS: See [HowToNodeJS.md](NodeJS.md).
-* Postgres: See [InstallPostgres.md](InstallPostgres.md).
+* Postgres: See [InstallPostgres.md](Postgres.md).
 * LibreOffice: Already installed by default.
 * VPN: Use Ubuntu built-in VPN client.
-* Keepass: See [InstallKeePass.md](InstallKeePass.md).
+* Keepass: See [InstallKeePass.md](KeePass.md).
 * Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
 * Printer: Add Ricoh-Aficio-MP-C4500 on 10.192.237.102.
 
