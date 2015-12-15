@@ -168,7 +168,7 @@ then the glassfish facet will automatically create `admin_objects` for each dest
 convention "*application*/jms/*destination_jndi_name*".
 * *javamail_resource*: If true or a string, then a javamail resource will be defined for the application. If set to a
 string then that will be the JNDI name of resource, otherwise it will be "*application*/mail/session".
-* *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
+* *jdbc_resource*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
 * *publish_endpoints*: By default the automation will publish the application urls and endpoints to the service
