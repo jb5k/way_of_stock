@@ -135,6 +135,7 @@ The GlassFish templates are used by applications and require referencing from ap
 The facet should include the following additional keys:
 
 * *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be deployed to.
+* *javamail_environment*: The environment from which to grab the email service. Only used if *javamail_resource* is specified.
 
 The configuration of the facet should look something like:
 
@@ -165,6 +166,8 @@ resource altogether.
 * *define_jms_destinations*: If an application has an openmq facet that defines destinations in the associated template
 then the glassfish facet will automatically create `admin_objects` for each destination based naming them using the
 convention "*application*/jms/*destination_jndi_name*".
+* *javamail_resource*: If true or a string, then a javamail resource will be defined for the application. If set to a
+string then that will be the JNDI name of resource, otherwise it will be "*application*/mail/session".
 * *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
