@@ -159,7 +159,7 @@ The template has the following keys:.
 * *package_url*: A url to the war file for the application. The url may include the symbol ``$VERSION`` that is
 replaced with the actual version of the application when the template is blended into domain configuration.
 * *context_root*: The context root of the application. If not specified, it will default to ``/*application*``.
-* *jms_resource_override*: By default if an application is configured to use the openmq facet then the openmq facet will
+* *jms_resource*: By default if an application is configured to use the openmq facet then the openmq facet will
 create a jms connection factory resource named using the pattern "*application*/jms/ConnectionFactory". This key makes
 it possible for the operator to specify the actual resource name. Set this to null to disable the creation of the
 resource altogether.
