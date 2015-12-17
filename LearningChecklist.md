@@ -66,7 +66,7 @@ and processes we use day to day.
     * Use domgen generated base ejb test for service.
     * Update jenkins job definition to collect tests
 
-# Stage 4	
+# Stage 4
 
 * Use dbt to define automate database creation:
     * Braid in dbt.
