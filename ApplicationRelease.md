@@ -135,6 +135,7 @@ The GlassFish templates are used by applications and require referencing from ap
 The facet should include the following additional keys:
 
 * *domain*: This specifies a symbolic key identifying which particular glassfish domain the application should be deployed to.
+* *javamail_environment*: The environment from which to grab the email service. Only used if *javamail_resource* is specified.
 
 The configuration of the facet should look something like:
 
@@ -158,14 +159,16 @@ The template has the following keys:.
 * *package_url*: A url to the war file for the application. The url may include the symbol ``$VERSION`` that is
 replaced with the actual version of the application when the template is blended into domain configuration.
 * *context_root*: The context root of the application. If not specified, it will default to ``/*application*``.
-* *jms_resource_override*: By default if an application is configured to use the openmq facet then the openmq facet will
+* *jms_resource*: By default if an application is configured to use the openmq facet then the openmq facet will
 create a jms connection factory resource named using the pattern "*application*/jms/ConnectionFactory". This key makes
 it possible for the operator to specify the actual resource name. Set this to null to disable the creation of the
 resource altogether.
 * *define_jms_destinations*: If an application has an openmq facet that defines destinations in the associated template
 then the glassfish facet will automatically create `admin_objects` for each destination based naming them using the
 convention "*application*/jms/*destination_jndi_name*".
-* *jdbc_resource_override*: By default if an application is configured to use the dbt facet then the dbt facet will
+* *javamail_resource*: If true or a string, then a javamail resource will be defined for the application. If set to a
+string then that will be the JNDI name of resource, otherwise it will be "*application*/mail/session".
+* *jdbc_resource*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
 * *publish_endpoints*: By default the automation will publish the application urls and endpoints to the service
@@ -179,7 +182,7 @@ values are interpolated before adding them as attributes. The following values c
     * `{{public_url}}`: The url to the root directory for accessing by public applications and users.
 * *config*: This optional key provides a contains a chunk of configuration that is blended into the configuration
 of the domain. The structure of this configuration is not described anywhere and you will need to look at the existing
-examples for inspiration. 
+examples for inspiration.
 
 The config section often has a _before_ hook that specifies a recipe to run prior to attempting to deploy the
 application. This allows the developer to write some basic ruby code that can customize the deploy for the application.

@@ -49,7 +49,7 @@ Add the following snippet to `~/.bashrc`;
 
 While to install Java 8 run:
 
-    $ $ sudo apt-get install oracle-java8-installer
+    $ sudo apt-get install oracle-java8-installer
 
 Add the following snippet to `~/.bashrc`;
 

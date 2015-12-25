@@ -7,7 +7,7 @@ Payara we currently use is `4.1.1.154 (Full Java EE)`.
 
 ## Download Payara
 
-The product can be downloaded from [http://www.payara.co.uk/previous_releases](http://www.payara.co.uk/previous_releases).
+The product can be downloaded from [http://www.payara.co.uk/downloads](http://www.payara.co.uk/downloads).
 
 This should be downloaded into the directory `~/Applications` and then run:
 

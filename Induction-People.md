@@ -9,6 +9,9 @@
 * Peter R: Front end / HTML. GWT. IWC. ARENA Refueler.
 * Karen: Ruby on Rails. CWN / Altona / EPWP. Off site. Testing. IRIS & Firetimes.
 * Pavel: EPWP.
+* Andrea: ?
+* William: SSRS Reports. Integration with FireWeb and external agencies. Data Munging, Fire simulation & Phoenix/RapidFire, ESRI and PostGIS, Python.
+* Federico: ?
 
 ## Clients
 
