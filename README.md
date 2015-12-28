@@ -8,6 +8,7 @@ evolve and be refined over time.
 
 * [Tide](Tide.md): Timesheet tool.
 * [KeePass](KeePass.md): Password locker where shared passwords and credentials are stored.
+* [Telecube](Telecube.md): 1300 Support line management.
 
 ## Basic Host Setup
 
