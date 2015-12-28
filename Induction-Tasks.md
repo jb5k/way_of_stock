@@ -25,6 +25,7 @@
 * Create account on Artifactory
 * Create account on New Relic
 * Create account on Papertrail
+* Create account on Wikidot site (http://wiki.stocksoftware.com.au/)
 * Connect to Wifi (Thelxinoe)
 
 ### DELWP
