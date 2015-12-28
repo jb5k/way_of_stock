@@ -98,6 +98,23 @@ use Buildr (i.e. the Chef projects), it is enough to manually create the project
 
 TODO: Record the fact that under Linux we need to change the open files limit?
 
+## Setting up icon in ubuntu
+
+To setup an icon for IDEA in ubuntu you need to create a file `/usr/share/applications/jetbrains-idea.desktop`.
+The file shoulc contain content similar to:
+
+        [Desktop Entry]
+        Version=1.0
+        Type=Application
+        Name=IntelliJ IDEA
+        Exec="/home/username/Applications/idea/bin/idea.sh" %f
+        Icon=/home/username/Applications/idea/bin/idea.png
+        Comment=Develop with pleasure!
+        Categories=Development;IDE;
+        Terminal=false
+        StartupNotify=true
+        StartupWMClass=jetbrains-idea
+
 ## Keyboard mappings for Ubuntu
 
 When running IDEA for Ubuntu, due to the Unity UI, a number of keystrokes are unavailable.
