@@ -102,7 +102,7 @@ TODO: Record the fact that under Linux we need to change the open files limit?
 ## Setting up icon in ubuntu
 
 To setup an icon for IDEA in ubuntu you need to create a file `/usr/share/applications/jetbrains-idea.desktop`.
-The file shoulc contain content similar to:
+The file should contain content similar to:
 
         [Desktop Entry]
         Version=1.0
