@@ -76,6 +76,7 @@ Note: Any plugins in _italics_ are plugins that are not supplied with the IDE an
 plugin repository.
 
 ## Optional Plugins
+
 * _Key Promoter_  can be used to learn the keystroke bindings for those new to IDEA
 
 ## JVM Settings
