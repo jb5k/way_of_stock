@@ -17,4 +17,3 @@ username and password are stored in the [KeyPass](KeyPass.md) file.
 When you are no longer on Standby it is recommended that you return to the website and re-route the phone number
 to the next person on Standby or to James if the Standby period has ended. The numbers for other people are stored
 in the notes field in the [KeyPass](KeyPass.md) file when redirecting the phone number.
-
