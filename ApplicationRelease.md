@@ -171,7 +171,7 @@ string then that will be the JNDI name of resource, otherwise it will be "*appli
 * *jdbc_resource*: By default if an application is configured to use the dbt facet then the dbt facet will
 create a jdbc resource named using the pattern "*application*/jdbc/*pascalCase(application)*". This key makes it possible
 for the operator to specify the actual resource name. Set this to null to disable the creation of the resource altogether.
-* *publish_endpoints*: By default the automation will publish the application urls and endpoints to the service
+* *publish_service*: By default the automation will publish the application urls and endpoints to the service
 directory. This optional configuration key allows the operator to disable this publishing by setting it to `false`.
 This is done when there is more complex logic surrounding the publishing of the service.
 * *endpoints*: This optional key provides a mechanism for adding additional attributes to the service publication. The
