@@ -97,7 +97,17 @@ Most projects use Buildr to generate the project files and explicitly configure 
 follow the Buildr [instructions](BuildrHowto.md#IDE) on how to generate the projects. For the few projects that don't
 use Buildr (i.e. the Chef projects), it is enough to manually create the projects.
 
-TODO: Record the fact that under Linux we need to change the open files limit?
+## inotify limit for Ubuntu
+
+The IDEA filesystem monitor uses inotify built into the Linux kernel to monitor open files. To ensure the kernel is
+capable of monitoring enough files for our projects you can check the current limit by running `cat /proc/sys/fs/inotify/max_user_watches`.
+It should be `524288`. If that is not the value then you need to add the following line to the `/etc/sysctl.conf` file:
+
+    fs.inotify.max_user_watches = 524288
+
+Then issue the following command to apply the change:
+
+    $ sudo sysctl -p
 
 ## Setting up icon in ubuntu
 
