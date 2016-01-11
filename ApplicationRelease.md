@@ -180,6 +180,7 @@ values are interpolated before adding them as attributes. The following values c
     * `{{public_url}}`: The url to the application for accessing by public applications and users.
     * `{{internal_url}}`: The url to the root directory for accessing by internal applications and users.
     * `{{public_url}}`: The url to the root directory for accessing by public applications and users.
+    * `{{config:AAAA}}`: The value of the configuration key `AAAA` under the ``config`` key in the application configuration. The `AAAA`
 * *config*: This optional key provides a contains a chunk of configuration that is blended into the configuration
 of the domain. The structure of this configuration is not described anywhere and you will need to look at the existing
 examples for inspiration.
