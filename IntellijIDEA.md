@@ -126,6 +126,10 @@ The file should contain content similar to:
     StartupNotify=true
     StartupWMClass=jetbrains-idea
 
+The file should also be made world executable via:
+
+    $ sudo chmod a+x /usr/share/applications/jetbrains-idea.desktop
+
 ## Keyboard mappings for Ubuntu
 
 When running IDEA for Ubuntu, due to the Unity UI, a number of keystrokes are unavailable.
