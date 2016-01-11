@@ -175,7 +175,7 @@ for the operator to specify the actual resource name. Set this to null to disabl
 directory. This optional configuration key allows the operator to disable this publishing by setting it to `false`.
 This is done when there is more complex logic surrounding the publishing of the service.
 * *endpoints*: This optional key provides a mechanism for adding additional attributes to the service publication. The
-values are interpolated before adding them as attributes. The following values can bve interpolated:
+values are interpolated before adding them as attributes. The following values can be interpolated:
     * `{{internal_url}}`: The url to the application for accessing by internal applications and users.
     * `{{public_url}}`: The url to the application for accessing by public applications and users.
     * `{{internal_url}}`: The url to the root directory for accessing by internal applications and users.
