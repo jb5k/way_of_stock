@@ -114,17 +114,17 @@ Then issue the following command to apply the change:
 To setup an icon for IDEA in ubuntu you need to create a file `/usr/share/applications/jetbrains-idea.desktop`.
 The file should contain content similar to:
 
-        [Desktop Entry]
-        Version=1.0
-        Type=Application
-        Name=IntelliJ IDEA
-        Exec="/home/username/Applications/idea/bin/idea.sh" %f
-        Icon=/home/username/Applications/idea/bin/idea.png
-        Comment=Develop with pleasure!
-        Categories=Development;IDE;
-        Terminal=false
-        StartupNotify=true
-        StartupWMClass=jetbrains-idea
+    [Desktop Entry]
+    Version=1.0
+    Type=Application
+    Name=IntelliJ IDEA
+    Exec="/home/username/Applications/idea/bin/idea.sh" %f
+    Icon=/home/username/Applications/idea/bin/idea.png
+    Comment=Develop with pleasure!
+    Categories=Development;IDE;
+    Terminal=false
+    StartupNotify=true
+    StartupWMClass=jetbrains-idea
 
 ## Keyboard mappings for Ubuntu
 
