@@ -50,3 +50,17 @@ when a new project is created, it will be uncloaked, and will appear in your lis
 
 To cloak a project, go to the Projects Administration page, find the project in the Project Cloaking table, tick
 the Cloaked tick box, and click Save at the bottom of the table.
+
+## DELWP Duty officer
+
+Those people who are working as Duty Officers for DELWP need to enter their work as follows:
+
+For normal working days only the night work needs to be recorded.  You should record nights as 'DELWP D/O Night', with a value of 1.
+
+For weekends and public holidays both the day work and the night work needs to be recorded.
+You should record the night as 'DELWP D/O Night', with a value of 1, and the day as 'DELWP D/O Day', with a value of 1.
+
+If you are activated then this should be recorded as an additional entry of 'IRIS Standby Activated', the value should be the number of hours, with a comment describing the SRQ.
+
+Note that activation MUST be done in consultation with Fireweb Level 1 support.  If anyone else askes you to do work then you direct them to Fireweb Support.
+Answering the phone, discussing a problem, and tracking down someone to do the work is not an activiation.  An activation requires you to be actually working on a PC to fix a problem.
