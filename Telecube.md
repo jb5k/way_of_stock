@@ -1,4 +1,4 @@
-# Installing KeePass
+# Telecube
 
 Telecube service is responsible for managing the 1300 support number that is supplied to our clients when they need
 out of business support. This is typically used throughout the fire season on weekends. It is typically configured
