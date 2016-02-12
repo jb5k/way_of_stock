@@ -86,3 +86,22 @@ easiest way to run the checks is to use the following command:
     $ bundle exec buildr dev:checks
 
 This the pre-commit checks and opens the source code analysis reports in the browser for visual inspection.
+
+## SQL Server versus Postgres builds
+
+Several projects are capable of building either SQL Server compatible libraries or Postgres compatible libraries.
+Typically the libraries default to SQL Server compaibility and can be switched to Postgres compatibility by
+setting the environment variable `DB_TYPE` to `pg`. As the generated JPA artifacts are DB-specific, the project
+will need to be rebuilt, domgen re-run and the artifacts repackaged when you change the `DB_TYPE` variable. i.e
+
+Regenerate the domgen files:
+
+    $ DB_TYPE=pg bundle exec buildr clean domgen:all
+
+Rebuild the IntelliJ IDEA project files:
+
+    $ DB_TYPE=pg bundle exec buildr artifacts:sources idea
+
+Rebuild the project and install it in the local repository:
+
+    $ DB_TYPE=pg bundle exec buildr ci:setup install
