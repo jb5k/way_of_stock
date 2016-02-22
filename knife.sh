@@ -3,9 +3,11 @@ data_bag_database() { data_bag 'databases' $1; }
 data_bag_template() { data_bag 'templates' $1; }
 data_bag_services() { data_bag 'services' $1; }
 data_bag_application() { data_bag 'applications' $1; }
+data_bag_destination() { data_bag 'destinations' $1; }
 
 alias kdba=data_bag_application
-alias kdbd=data_bag_database
+alias kdbd=data_bag_destination
+alias kdbdb=data_bag_database
 alias kdbs=data_bag_services
 alias kdbt=data_bag_template
 alias kcb='knife cookbook upload'
@@ -16,7 +18,13 @@ _database() {
    local word=${COMP_WORDS[COMP_CWORD]}
    COMPREPLY=( $( compgen -W "`find data_bags/databases/*.json -exec basename {} \;`" -- $word ) )
 }
-complete -F _database kdbd
+complete -F _database kdbdb
+
+_destination() {
+   local word=${COMP_WORDS[COMP_CWORD]}
+   COMPREPLY=( $( compgen -W "`find data_bags/destinations/*.json -exec basename {} \;`" -- $word ) )
+}
+complete -F _destination kdbd
 
 _services() {
    local word=${COMP_WORDS[COMP_CWORD]}
