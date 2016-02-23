@@ -109,6 +109,16 @@ Then issue the following command to apply the change:
 
     $ sudo sysctl -p
 
+## Avoiding blocked keyboard input under Ubuntu
+
+IDEA interacts poorly with a somewhat buggy version of IBus that ships with some versions of
+Ubuntu (See IDEA-78860 for further details). The symptom is idea failing to accept keystrokes.
+There are a few ways to fix this:
+
+* Upgrade IBus to version 1.5.11.
+* Append the following line to `~/.bashrc`, then restart your session.
+* Turn off IBus at `System Settings | Language Support | Keyboard input method`.
+
 ## Setting up icon in ubuntu
 
 To setup an icon for IDEA in ubuntu you need to create a file `/usr/share/applications/jetbrains-idea.desktop`.
