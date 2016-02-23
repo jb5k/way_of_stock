@@ -1,7 +1,7 @@
 # Managing AWS via Ruby
 
 We use the Amazon Web Services for the provision of a number of servers, for our clients outside Vic Gov.
-AWS has a nice web site, but you can also use scripts to manage the servers there. 
+AWS has a nice web site, but you can also use scripts to manage the servers there.
 
 ## Setup
 
@@ -23,8 +23,7 @@ aws_secret_access_key = your_secret_here
     $ export AWS_REGION=ap-southeast-1
 ```
     * You might want to put this into ~/.bash.d/aws.sh
-     
+
 ## More info
- 
+
 Lots of stuff here: http://docs.aws.amazon.com/sdk-for-ruby/latest/DeveloperGuide/aws-sdk-ruby-dg.pdf
- 
