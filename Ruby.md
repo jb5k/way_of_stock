@@ -59,12 +59,6 @@ While under Linux you may need to do:
     $ cd ~/.rbenv/plugins/ruby-build
     $ git pull
 
-Projects that use dbt to manage the database automation also require the presence of a specific version of
-jruby. This is a bug/limitation of dbt and may be fixed at some future point but until such a time, the jruby
-version can be installed by:
-
-    $ rbenv install jruby-1.7.2
-
 Under Linux you _may_ need to install the dependency:
 
     $ sudo apt-get install -y g++
