@@ -254,7 +254,6 @@ configuration and passed to dbt during the creation and import processes.
 must be a database service from which a database name is extracted. This mapping is merged with the `linked_databases`
 configuration and passed to dbt during the creation and import processes.
 
-
 ```json
 {
   ...
@@ -288,7 +287,6 @@ The facet supports the following additional keys:
 
 * *username*: The username of the broker user. No user is created if not specified.
 * *password*: The password of the broker user. Must be null unless username is specified.
-
 
 ```json
 {
