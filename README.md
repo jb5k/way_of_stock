@@ -43,6 +43,7 @@ point for using the tools within the context of our projects.
 * [QBroswerLite](QBrowserLite.md): OpenMQ Message Broker Destination browser.
 * [Postgres](Postgres.md): Postgres database server.
 * [Zim](Zim.md): Tool to automate changes to source code repositories.
+* [Install hub](Hub.md): Tool for interacting with GitHub from the command line.
 
 ## Development Processes
 
