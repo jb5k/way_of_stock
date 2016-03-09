@@ -3,7 +3,9 @@
 /*.ids
 /*.iws
 //*.ids
-//*.ipr
 //*.iws
+///*.ids
+///*.ipr
+///*.iws
 /patch.*
 /tmp
