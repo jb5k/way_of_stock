@@ -50,7 +50,6 @@ as the command will prompt you for appropriate credentials when the first action
       user: MyUser
       protocol: http
 
-
 ## Creating a pull request from the command line
 
 The most common use of hub is to create a pull request from the command line. This can be done
