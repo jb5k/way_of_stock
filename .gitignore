@@ -1,7 +1,9 @@
+
 *.iml
 /*.ids
-/*.ipr
 /*.iws
-/*/*.iml
+//*.ids
+//*.ipr
+//*.iws
 /patch.*
 /tmp
