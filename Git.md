@@ -80,6 +80,7 @@ file named `.gitignore_global` should be placed in your home directory with the 
     ehthumbs.db
     Thumbs.db
     *~
+    #.*
 
 Then the following command should be run:
 
