@@ -3,18 +3,18 @@
 * Create User:
 * Install Homebrew: [Homebrew.md](Homebrew.md).
 * Install Chrome: `brew cask install google-chrome`.
-* Git: See [SetupGit.md](Git.md).
-* Java 7: See [InstallJava.md](Java.md).
-* Java 8: See [InstallJava.md](Java.md).
-* Intellij Idea: See [InstallIntellijIDEA.md](IntellijIDEA.md).
-* Ruby: See [InstallRuby.md](Ruby.md).
-* Buildr: See [InstallGemDependencies.md](GemDependencies.md).
-* Payara: See [InstallGlassFish.md](GlassFish.md).
+* Git: See [Git.md](Git.md).
+* Java 7: See [Java.md](Java.md).
+* Java 8: See [Java.md](Java.md).
+* Intellij Idea: See [IntellijIDEA.md](IntellijIDEA.md).
+* Ruby: See [Ruby.md](Ruby.md).
+* Buildr: See [GemDependencies.md](GemDependencies.md).
+* Payara: See [GlassFish.md](GlassFish.md).
 * NodeJS: See [HowToNodeJS.md](NodeJS.md).
-* Postgres: See [InstallPostgres.md](Postgres.md).
+* Postgres: See [Postgres.md](Postgres.md).
 * LibreOffice: `brew cask install libreoffice`
 * VPN: [Download Cisco AnyConnect mobility client 3.1](https://s3-ap-southeast-2.amazonaws.com/stocksoftware-installers/CiscoAnyConnect/mac/anyconnect-macosx-i386-3.1.06079-k9.dmg).
-* Keepass: See [InstallKeePass.md](KeePass.md).
+* Keepass: See [KeePass.md](KeePass.md).
 * Slack: `brew cask install slack`
 * Source Tree: `brew cask install sourcetree`
 * Bookmarks: Add all the links on the [External Services](ExternalServices.md) page.
