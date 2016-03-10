@@ -15,7 +15,7 @@ database that matches root project name. You may still need to define custome da
 via:
 
     require 'rptman'
-    
+
     SSRS::Config.define_datasource('SAMS','sams')
 
 [BuildrPlus](BuildrPlus.md) will also define the following tasks if there exists a file
