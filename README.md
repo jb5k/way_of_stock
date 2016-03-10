@@ -44,6 +44,7 @@ point for using the tools within the context of our projects.
 * [Postgres](Postgres.md): Postgres database server.
 * [Zim](Zim.md): Tool to automate changes to source code repositories.
 * [Hub](Hub.md): Tool for interacting with GitHub from the command line.
+* [Rptman](Rptman.md): Tool to automate interaction with SQL Server Reports Server.
 
 ## Development Processes
 
