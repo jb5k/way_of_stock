@@ -21,12 +21,12 @@ via:
 [BuildrPlus](BuildrPlus.md) will also define the following tasks if there exists a file
 `config/ci-report-database.yml`.
 
-### rptman:download_production_environment
+    $ buildr rptman:download_production_environment
 
 Downloads reports form production to local drive. Useful if you need to try and find out what changes
 have been made to production without also being checked into source control.
 
-### rptman:upload_to_production_environment
+    $ buildr rptman:upload_to_production_environment
 
 Uploads reports (but not data sources) to production. Useful until we can correctly automate reports
 as part of our release process.
