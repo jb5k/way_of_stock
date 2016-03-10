@@ -28,5 +28,5 @@ have been made to production without also being checked into source control.
 
 ### rptman:upload_to_production_environment
 
-Uploads reports (but not datasources) to production. Useful until we can correctly automate reports
+Uploads reports (but not data sources) to production. Useful until we can correctly automate reports
 as part of our release process.
