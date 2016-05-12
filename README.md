@@ -26,6 +26,7 @@ features but they likely to be required by many projects.
 * [Install ruby and rbenv](Ruby.md)
 * [Install java](Java.md)
 * [Install freetds library](FreeTDS.md)
+* [Install Postgres](Postgres.md)
 * [Install gem dependencies](GemDependencies.md)
 * [Install IntelliJ IDEA](IntellijIDEA.md)
 * [Install GlassFish](GlassFish.md)
