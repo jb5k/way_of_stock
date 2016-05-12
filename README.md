@@ -32,6 +32,12 @@ features but they likely to be required by many projects.
 * [Install GlassFish](GlassFish.md)
 * [Install Docker](Docker.md)
 
+## How-to Configure the Application
+
+The following documents describe configuration of the application during development.
+
+* [Local Application Configuration](LocalConfiguration.md)
+
 ## Essential Development Tools
 
 The following documents describe some of the essential tools in use in our projects. They should give a starting
