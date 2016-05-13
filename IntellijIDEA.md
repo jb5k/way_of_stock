@@ -121,7 +121,7 @@ There are a few ways to fix this:
 
 ## Setting up icon in ubuntu
 
-To setup an icon for IDEA in ubuntu you need to create a file `/usr/share/applications/jetbrains-idea.desktop`.
+To setup an icon for IDEA in ubuntu you need to create a file `~/.local/share/applications/jetbrains-idea.desktop`.
 The file should contain content similar to:
 
     [Desktop Entry]
