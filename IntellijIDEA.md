@@ -124,6 +124,7 @@ There are a few ways to fix this:
 To setup an icon for IDEA in ubuntu you need to create a file `~/.local/share/applications/jetbrains-idea.desktop`.
 The file should contain content similar to:
 
+    #!/usr/bin/env xdg-open
     [Desktop Entry]
     Version=1.0
     Type=Application
