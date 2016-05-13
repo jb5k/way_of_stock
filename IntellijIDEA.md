@@ -139,7 +139,7 @@ The file should contain content similar to:
 
 The file should also be made world executable via:
 
-    $ sudo chmod a+x /usr/share/applications/jetbrains-idea.desktop
+    $ chmod 644 ~/.local/share/applications/jetbrains-idea.desktop
 
 ## Keyboard mappings for Ubuntu
 
