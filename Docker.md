@@ -54,8 +54,19 @@ to the run sub-command but a typical command is:
 
 # Configuring DNS correctly for Docker for Mac
 
-Follow these steps to ensure that docker containers can talk across the VPN. It has to be done after every reboot.
-Hopefully a docker update will eliminate the need for this over time.
+To get the set of DNS servers that are available on OSX the easiest command to determine this is `scutil --dns`.
+This will give several pagefuls of information, particularly if you are attached to multiple networks such as
+via a VPN. The "correct" DNS server should be selected where correct determines which network you want to resolve
+using. Often it is the one on the VPN network. A simpler command to list all DNS servers is
+
+    $ scutil --dns | grep 'nameserver\[[0-9]*\]' | awk '{print $3}' | grep -v '::' | sort | uniq
+
+It should be noted that it is hoped that a future version of docker should eliminate the need for all this setup
+but it is currently required.
+
+## Build-time DNS
+
+To set the build-time DNS follow these steps:
 
 1) Access the terminal of the Docker Alpine VM using GNU screen:
 
@@ -66,6 +77,11 @@ Hopefully a docker update will eliminate the need for this over time.
 3) Edit /etc/hosts and/or /etc/resolv.conf to point to dns resovlers inside the VPN.
 
 4) To quit the screen app, type CTRL-A, then CTRL-\\
+
+## Run-time DNS
+
+Runtime dns can be specified by passing the `--dns DNS` parameter to the `docker run` command. If you are
+using Redfish the easiest way to ensure this happens is to set the environment variable `DOCKER_DNS`.
 
 # Useful commands
 
