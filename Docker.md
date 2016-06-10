@@ -66,3 +66,13 @@ Hopefully a docker update will eliminate the need for this over time.
 3) Edit /etc/hosts and/or /etc/resolv.conf to point to dns resovlers inside the VPN.
 
 4) To quit the screen app, type CTRL-A, then CTRL-\\
+
+# Useful commands
+
+### Delete Stopped containers
+
+    docker rm -v $(docker ps -a -q -f status=exited)
+
+### Delete Dangling images
+
+    docker rmi $(docker images -q -f dangling=true)
