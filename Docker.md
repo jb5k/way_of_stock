@@ -51,3 +51,18 @@ to the run sub-command but a typical command is:
     $ echo ". $(brew --prefix)/etc/bash_completion" >> ~/.bash_profile
     $ wget https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker -O ~/.docker_completion.sh
     $ echo ". ~/.docker_completion.sh" >> ~/.bash_profile
+
+# Configuring DNS correctly for Docker for Mac
+
+Follow these steps to ensure that docker containers can talk across the VPN. It has to be done after every reboot.
+Hopefully a docker update will eliminate the need for this over time.
+
+1) Access the terminal of the Docker Alpine VM using GNU screen:
+
+    $ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
+
+2) Login as user root. No password necessary
+
+3) Edit /etc/hosts and/or /etc/resolv.conf to point to dns resovlers inside the VPN.
+
+4) To quit the screen app, type CTRL-A, then CTRL-\\
