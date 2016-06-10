@@ -69,10 +69,42 @@ Hopefully a docker update will eliminate the need for this over time.
 
 # Useful commands
 
+### Get IP address
+
+    docker inspect -f '{{ .NetworkSettings.IPAddress }}' <container_name>
+
 ### Delete Stopped containers
 
     docker rm -v $(docker ps -a -q -f status=exited)
 
+### Delete old containers
+
+  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+
 ### Delete Dangling images
 
     docker rmi $(docker images -q -f dangling=true)
+
+### Delete dangling volumes
+
+  docker volume rm $(docker volume ls -q -f dangling=true)
+
+### Kill running containers
+
+    docker kill $(docker ps -q)
+
+### Monitor system resource utilization for running containers
+
+    docker stats <container>
+
+or for all containers
+
+    docker stats
+
+or for all containers by name
+
+    docker stats $(docker ps --format '{{.Names}}')
+
+### List images based on ancestor
+
+    docker ps -a -f ancestor=stocksoftware/redfish
