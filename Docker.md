@@ -280,7 +280,7 @@ Set memory and CPU sharing:
 
 ### Delete old containers
 
-  docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
+    docker ps -a | grep 'weeks ago' | awk '{print $1}' | xargs docker rm
 
 ### Delete Dangling images
 
@@ -288,7 +288,7 @@ Set memory and CPU sharing:
 
 ### Delete dangling volumes
 
-  docker volume rm $(docker volume ls -q -f dangling=true)
+    docker volume rm $(docker volume ls -q -f dangling=true)
 
 ### Kill running containers
 
