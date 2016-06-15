@@ -73,7 +73,7 @@ To set the build-time DNS follow these steps:
 
 2) Login as user root. No password necessary
 
-3) Edit /etc/hosts and/or /etc/resolv.conf to point to dns resovlers inside the VPN.
+3) Edit `/etc/hosts` and/or `/etc/resolv.conf` to point to dns resovlers inside the VPN.
 
 4) To quit the screen app, type CTRL-A, then CTRL-\\
 
