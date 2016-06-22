@@ -20,4 +20,3 @@ In preferences, on the 'Lon-Lat Plots' tab, in the 'Map Plots' section:
 - Centre on 146, -36.5
 - Width: 15
 - Height: 6
- 
