@@ -19,6 +19,7 @@ and processes we use day to day.
         * Generate a war file using buildr.
 
     * JAX-RS endpoint that uses a simple CDI service to emit hello world.
+        * Follow this document structure https://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html
         * Run `buildr idea` to prepare the project for Idea.
         * Create the build.yaml file wherein the library dependencies will be defined.
         * Create the classes.
