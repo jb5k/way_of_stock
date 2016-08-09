@@ -36,8 +36,8 @@ and processes we use day to day.
     * Create `config/setup/sh`.
 
 * Define project on Jenkins without deploying to Development
-    * Get the fisg/architecture repository
-    * Add into architecture/.chef your chef .pem file.
+    * Get the fisg/infrastructure repository
+    * Add into infrastructure/.chef your chef .pem file.
     * Define a new job in the fisg-jenkins cookbook: `cookbooks/fisg-jenkins/libraries/fisg_jenkins.rb`.
     * Run `knife cookbook upload --force fisg-jenkins` to upload cookbook.
     * Run `./xpiceweasel.rb  --converge DEVtools | sh` for Jenkins to pick up the updated cookbook.
