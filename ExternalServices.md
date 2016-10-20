@@ -22,7 +22,7 @@ Links to stuff we use that someone else provides
 * [DELWP Confluence](http://confluence.fire.dse.vic.gov.au/)
 * [DELWP Chef](http://chef.fire.dse.vic.gov.au/)
 * [DELWP Jenkins](http://build.fire.dse.vic.gov.au/)
-* [DELWP Nexus](http://repo.fire.dse.vic.gov.au/)
+* [DELWP Nexus](http://repo.ffm.vic.gov.au/)
 * [DELWP Service Now](https://depi.service-now.com/)
 
 ## Arena Services
