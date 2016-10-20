@@ -19,8 +19,8 @@ Links to stuff we use that someone else provides
 * [DELWP Fireweb](http://fireweb)
 * [DELWP JIRA](http://jira.dse.vic.gov.au/)
 * [DELWP Confluence](http://confluence.fire.dse.vic.gov.au/)
-* [DELWP Chef](http://chef.fire.dse.vic.gov.au/)
-* [DELWP Jenkins](http://build.fire.dse.vic.gov.au/)
+* [DELWP Chef](http://chef.ffm.vic.gov.au/)
+* [DELWP Jenkins](http://build.ffm.vic.gov.au/)
 * [DELWP Nexus](http://repo.ffm.vic.gov.au/)
 * [DELWP Service Now](https://depi.service-now.com/)
 
