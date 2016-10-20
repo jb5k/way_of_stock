@@ -17,7 +17,6 @@ Links to stuff we use that someone else provides
 
 * [DELWP Sauron](http://sauron/) (Internal Application Catalog and Monitoring)
 * [DELWP Fireweb](http://fireweb)
-* [DELWP Github](http://git.fire.dse.vic.gov.au)
 * [DELWP JIRA](http://jira.dse.vic.gov.au/)
 * [DELWP Confluence](http://confluence.fire.dse.vic.gov.au/)
 * [DELWP Chef](http://chef.fire.dse.vic.gov.au/)
