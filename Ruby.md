@@ -18,19 +18,9 @@ Under OSX with [Homebrew](Homebrew.md) installed you can install via;
 
 ### Linux Instructions
 
-Under Linux you need to checkout rbenv from Git;
+Under Linux you need to run;
 
-    $ git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
-    $ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-Add the following snippet to `~/.bashrc`;
-
-    PATH=$PATH:$HOME/.rbenv/bin
-    eval "$(rbenv init -)"
-
-Run `~/.bashrc`;
-
-    $ source ~/.bashrc
+    $ sudo apt install rbenv ruby-build
 
 ## Installing ruby
 
