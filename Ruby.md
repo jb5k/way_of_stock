@@ -34,8 +34,8 @@ Run `~/.bashrc`;
 
 ## Installing ruby
 
-Most projects use the _2.1.3_ version of ruby. The version of ruby used by a project can be determined by
-reading the contents of the `.ruby-version` in the base directory of the project. Replace _2.1.3_ in the
+Most projects use the _2.3.1_ version of ruby. The version of ruby used by a project can be determined by
+reading the contents of the `.ruby-version` in the base directory of the project. Replace _2.3.1_ in the
 following instructions with the version that the project actually uses.
 
 Under Linux, first install required dependencies:
@@ -44,9 +44,9 @@ Under Linux, first install required dependencies:
 
 To install ruby, it is as simple as:
 
-    $ rbenv install 2.1.3
+    $ rbenv install 2.3.1
 
-Note that if the 2.1.3 version is not listed when you do:
+Note that if the 2.3.1 version is not listed when you do:
 
     $ rbenv install --list
 
