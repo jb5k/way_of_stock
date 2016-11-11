@@ -46,8 +46,7 @@ Then under OSX you may need to do a:
 
 While under Linux you may need to do:
 
-    $ cd ~/.rbenv/plugins/ruby-build
-    $ git pull
+    $ sudo apt install ruby-build
 
 Under Linux you _may_ need to install the dependency:
 
