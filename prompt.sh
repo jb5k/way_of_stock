@@ -24,8 +24,8 @@ function __my_rbenv_ruby_version {
 }
 
 function __my_chef_chef_mode {
-   [ "$CHEF_MODE" == "production" ] && echo "D "
-   [ "$CHEF_MODE" == "stock" ] && echo "A "
+   [ "$CHEF_MODE" == "ems" ] && echo "EMS "
+   [ "$CHEF_MODE" == "stock" ] && echo "STK "
 }
 
 if [ "$(type -t __docker_machine_ps1)" != function ]; then
