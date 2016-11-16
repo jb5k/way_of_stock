@@ -19,7 +19,7 @@ the `config/application.yml` configuration file. Typically developers are expect
 containing configuration for particular databases, message brokers, keycloak etc. These scripts can either
 be called from the `~/.bashrc` script or manually run by the user if they are switching between environments.
 
-i.e `~/.environment/common.sh` like:
+i.e `~/.environments.d/common.local.sh` like:
 
     unset DOCKER_DNS
     
@@ -46,7 +46,7 @@ i.e `~/.environment/common.sh` like:
     export KEYCLOAK_ADMIN_PASSWORD=password
     export KEYCLOAK_TOKEN="ey..."
 
-i.e `~/.environment/sqlserver.sh` like:
+i.e `~/.environments.d/sqlserver.sh` like:
 
     source ~/.environments.d/common.local.sh
 
@@ -55,7 +55,7 @@ i.e `~/.environment/sqlserver.sh` like:
     export DB_SERVER_PASSWORD=secret
     export DB_SERVER_HOST=sqlserver.example.com
 
-i.e `~/.environment/postgres.sh` like:
+i.e `~/.environments.d/postgres.sh` like:
 
     source ~/.environments.d/common.local.sh
 
