@@ -23,6 +23,10 @@ line such as `BuildrPlus::Jenkins.auto_zim = true` to the `buildfile` or be mark
 depend on `buildr_plus` library project template or have a line such as `BuildrPlus::Dbt.library = true` in
 the `buildfile`.)
 
+It should also be notes that zim is only configured to run on projects if all the build processes share the
+same artifact repository. Some projects build internally on jenkins and externally on travisci and do NOT
+share an artifact repository. These projects are not yet supported as targets of autozim-ming.
+
 ## How is it implemented?
 
 Essentially `buildr_plus` generates some code that is placed in `Jenkinsfile` and `.jenkins/main.groovy`
