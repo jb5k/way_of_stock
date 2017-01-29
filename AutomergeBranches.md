@@ -23,7 +23,7 @@ Many projects will already have this enabled?
 
 ## How is it implemented?
 
-Essentially `buildr_plus` generates some code that is placed in `Jenkinsfile` and `.jenkins/main.groovy`
-that checks the name of the branch and if it is an automerge branch then performs different behaviour.
-You can look at the generated jenkins configuration to understand the nuts-and-bolts. The jenkins server
-then automatically detects the presence of the `Jenkinsfile` and runs the build appropriately.
+Essentially `buildr_plus` generates some code that is placed in `Jenkinsfile` that checks the name of the 
+branch and if it is an automerge branch then performs different behaviour. You can look at the generated
+jenkins configuration to understand the nuts-and-bolts. The jenkins server then automatically detects the
+presence of the `Jenkinsfile` and runs the build appropriately.
