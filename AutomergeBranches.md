@@ -15,6 +15,10 @@ is assumed a future build will attempt to automerge the changes. If changes have
 then these changes are merged into the `AM_` branch and pushed to the git repository, thus triggering another
 build.
 
+However sometimes you do not wish to merge into master in which case you can use an alternative syntax and
+prefix branch with `AM-mybranch_` in which case the automerge infrastructure will attempt to automatically
+merge changes into the branch `mybranch`.
+
 ## How to enable?
 
 What do you need to get Automerge branches working? A modern version of `buildr_plus` with the `:jenkins`
