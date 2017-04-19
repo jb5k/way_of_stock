@@ -11,26 +11,6 @@ is the best place to go look for instructions. There are specific instructions f
 
 The remaining section adds some additional notes that should help you getting started.
 
-## Creating a local Docker Machine
-
-Docker machine is the mechanism via which we will configure hosts to run docker containers. During
-development you will most likely use VirtualBox to host the docker engine and deploy into the virtual
-box host. The simplest way to create such a host is:
-
-    $ docker-machine create --driver virtualbox default
-
-However this may not be needed as the machine can be created when the latest docker toolbox is installed.
-
-The machine can be started and stopped via the commands
-
-    $ docker-machine stop default
-    $ docker-machine start default
-
-To get your local docker commands to communicate with this docker engine instance you will need to set
-up some environment variables. This can be done via:
-
-    $ eval $(docker-machine env default)
-
 ## Building an image
 
 Assuming you are creating a docker image from a Dockerfile in a directory it is as simple as:
