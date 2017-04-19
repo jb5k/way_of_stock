@@ -8,12 +8,6 @@ For most projects there is a single configuration file that needs to be updated 
     $ cp config/application.example.yml config/application.yml
     $ vi config/application.yml
 
-For older projects that use [Glassfish](GlassFish.md) you can customize the environment via the
-following. Note: Modern redfish-based projects store all the configuration in `config/application.yml`.
-
-    $ cp config/local.example.sh config/local.sh
-    $ vi config/local.sh
-
 Most projects will attempt to derive configuration from environment variables if it is not defined in
 the `config/application.yml` configuration file. Typically developers are expected create a files
 containing configuration for particular databases, message brokers, keycloak etc. These scripts can either
