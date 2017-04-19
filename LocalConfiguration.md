@@ -8,10 +8,12 @@ For most projects there is a single configuration file that needs to be updated 
     $ cp config/application.example.yml config/application.yml
     $ vi config/application.yml
 
-Most projects will attempt to derive configuration from environment variables if it is not defined in
-the `config/application.yml` configuration file. Typically developers are expected create a files
-containing configuration for particular databases, message brokers, keycloak etc. These scripts can either
-be called from the `~/.bashrc` script or manually run by the user if they are switching between environments.
+However for the vast majority of projects this is not required if the correct environment variables are
+configured. The build system will automatically copy `config/application.example.yml` to `config/application.yml`
+and attempt to derive additional configuration from environment variables. Developers are expected create bash
+scripts containing environment variable configuration for particular databases, message brokers, keycloak etc.
+These scripts can either be called from the `~/.bashrc` script or manually run by the user if they are switching
+between environments.
 
 i.e `~/.environments.d/common.local.sh` like:
 
