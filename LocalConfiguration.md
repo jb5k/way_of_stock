@@ -22,7 +22,7 @@ be called from the `~/.bashrc` script or manually run by the user if they are sw
 i.e `~/.environments.d/common.local.sh` like:
 
     unset DOCKER_DNS
-    
+
     unset DB_SERVER_PORT
     unset DB_SERVER_HOST
     unset DB_SERVER_INSTANCE
@@ -32,14 +32,14 @@ i.e `~/.environments.d/common.local.sh` like:
 
     export CONFIG_ALLOW_HOSTNAME=true
     export GLASSFISH_HOME=/Users/username/Applications/payara
-    
+
     export OPENMQ_HOST=localhost
-    
+
     export RPTMAN_ENDPOINT=http://sqlssrs.example.com/webservice
     export RPTMAN_DOMAIN=example.com
     export RPTMAN_USERNAME=username
     export RPTMAN_PASSWORD=password
-    
+
     export KEYCLOAK_REALM=MyRealm
     export KEYCLOAK_REALM_PUBLIC_KEY="MI..."
     export KEYCLOAK_AUTH_SERVER_URL="http://id.example.com/"
