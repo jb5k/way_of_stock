@@ -18,4 +18,14 @@ letters, base-10 digits and/or non-alphanumeric symbols."_
 To prepare docker for running sql server it needs to have sufficient memory (i.e. ~3-4GB) and running a modern
 version of docker. Then you just need to run the following command.
 
-    $ docker run -e 'ACCEPT_EULA=Y' -e "'SA_PASSWORD=$DB_SERVER_PASSWORD'" -p 1433:1433 --name sqlserver -d microsoft/mssql-server-linux
+    $ docker run -e 'ACCEPT_EULA=Y' -e SA_PASSWORD=$DB_SERVER_PASSWORD -p 1433:1433 --name sqlserver -d microsoft/mssql-server-linux
+
+## Running sql shell against the instance
+
+To run a sqlshell that references the instance
+
+    $ docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $DB_SERVER_PASSWORD
+    
+## More documentation
+
+If you need more documentation, see microsoft: https://github.com/Microsoft/mssql-docker/tree/master/linux/preview
