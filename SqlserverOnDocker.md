@@ -25,7 +25,7 @@ version of docker. Then you just need to run the following command.
 To run a sqlshell that references the instance
 
     $ docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P $DB_SERVER_PASSWORD
-    
+
 ## More documentation
 
 If you need more documentation, see microsoft: https://github.com/Microsoft/mssql-docker/tree/master/linux/preview
