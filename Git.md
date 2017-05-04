@@ -25,6 +25,12 @@ because every Git commit uses this information, and it’s immutably baked into 
     $ git config --global user.name "My Name"
     $ git config --global user.email myname@example.com
 
+Our projects also rely on `.giattributes` files controlling the EOL style for files. i.e. CRLF for windows `.bat`
+files, LF for almost all other source files. To make sure this works you need to disable auto conversion of EOLs
+via:
+
+    $ git config --global core.autocrlf false
+
 You can verify the settings are correctly set by listing the values using the command:
 
     $ git config --global -l
