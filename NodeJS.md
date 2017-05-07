@@ -1,25 +1,31 @@
 # NodeJS
 
 NodeJS is a javascript environment for the server and command line. We primarily use it to run
-tooling such as the Less compiler.
+tooling. We use `nvm` a node version manager, to manage the node versions used by each project.
+To install node we first install `nvm` then issue commands to rbenv to install the correct versions
+of node.
 
-## Install NodeJS
+Node and `nvm` are required by a project when there exists a file named `.nvmrc` in the base
+directory of the project.
+
+## Installing nvm
 
 ### OSX Instructions
 
 Under OSX with [Homebrew](Homebrew.md) installed you can install via;
 
     $ brew update
-    $ brew install node
+    $ brew install nvm
 
-### Linux Instructions
+## Installing NodeJS
 
-To install under linux we install the package via;
+Most projects use _v6.10.3_, the latest LTS version of node. The version of node used by a project can be
+determined by reading the contents of the `.nvmrc` in the base directory of the project. Replace _v6.10.3_
+in the following instructions with the version that the project actually uses.
 
-    $ sudo apt-get install python-software-properties
-    $ sudo apt-add-repository ppa:chris-lea/node.js
-    $ sudo apt-get update
-    $ sudo apt-get install nodejs
+To install ruby, it is as simple as:
+
+    $ nvm install v6.10.3
 
 ## Using Node Package Manager
 
