@@ -17,13 +17,14 @@ base directory of the project.
 Under OSX with [Homebrew](Homebrew.md) installed you can install via;
 
     $ brew update
-    $ brew install nodenv
+    $ brew install nodenv node-build
 
 ### Linux Instructions
 
 Under Linux you need to run;
 
     $ git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+    $ git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
 
 Optionally, try to compile dynamic bash extension to speed up `nodenv`. Don't worry if it fails; `nodenv`
 will still work normally:
