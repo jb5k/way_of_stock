@@ -19,6 +19,10 @@ Under OSX with [Homebrew](Homebrew.md) installed you can install via;
     $ brew update
     $ brew install nodenv node-build
 
+WARNING: If you install using this mechanism you will get an annoying error message when running
+the `nodenv --version` or `nodenv help` commands. It should have no other issues but if the error
+messages gets annoying follow the linux instructions instead.
+
 ### Linux Instructions
 
 Under Linux you need to run;
