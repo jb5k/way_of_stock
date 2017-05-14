@@ -53,7 +53,6 @@ Add the following snippet to the ``~/.netrc`` file creating it if necessary and 
 as appropriate.
 
     machine github.com login myusername password mypassword
-    machine git.fire.dse.vic.gov.au login myinternalusername password myinternalpassword
 
 ## Turning off the "helpful" popup when using git gui
 
