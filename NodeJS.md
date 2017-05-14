@@ -92,3 +92,22 @@ An example of how to install Less.js a CSS preprocessor that we have used is:
 For a list of other very useful commands see the [usage](https://yarnpkg.com/en/docs/usage) documentation
 and if you already know node see the [migrating from node](https://yarnpkg.com/lang/en/docs/migrating-from-npm/)
 documentation.
+
+### Dependency Versioning policy
+
+Most of the time we prefer to use exact versions when we declare dependencies for a project to ensure we
+are getting the dependency that we have tested with. For `yarn` this means passing the `-E` flag when adding
+the dependency such as:
+
+    $ yarn add react@15.5.4 -E
+
+This results in a version in `package.json` without any qualifier (i.e. no `^` or any other version prefix).
+The `package.json` would look something like:
+
+    {
+      ...,
+      "dependencies": {
+        "react": "15.5.4",
+        ...
+      }
+    }
