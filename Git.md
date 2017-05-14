@@ -71,6 +71,12 @@ Install [GPG Suite](https://gpgtools.org/) under OSX, [Gpg4win](https://www.gpg4
 or run `sudo apt-get install gnupg2` under Linux and [generate and upload](https://help.github.com/articles/generating-a-new-gpg-key/)
  a key to GitHub. Then commit as usual and you should see your commits coming through as verified.
 
+If you perform git commits through IntelliJ and want them to be signed, add the following lines to your
+`~/.gnupg/gpg.conf` file:
+
+    # This option tells gpg not to expect a TTY interface and allows IntelliJ to sign commits
+    no-tty
+
 ## Turning off the "helpful" popup when using git gui
 
 When running `git gui` you will almost always get a warning that there is too many loose objects and a gc
