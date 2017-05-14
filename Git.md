@@ -54,6 +54,23 @@ as appropriate.
 
     machine github.com login myusername password mypassword
 
+## GPG signing commits
+
+Authorship of git commits is determined by some metadata setup when running git as documented in the
+[Configuring Basic Settings](#Configuring Basic Settings) section. It is trivial to impersonate anyone
+when committing code. To avoid this scenario you can gpg sign your commits which means that it is harder
+to impersonate your commits. Your commits are also marked as _Verified_ on GitHub website. See the
+[documentation](https://help.github.com/articles/signing-commits-using-gpg/) on GutHub for how to setup
+gpg signing.
+
+The cliff notes for setting up gpg signing are run the following command:
+
+    $ git config --global commit.gpgsign true
+
+Install [GPG Suite](https://gpgtools.org/) under OSX, [Gpg4win](https://www.gpg4win.org/) under windows
+or run `sudo apt-get install gnupg2` under Linux and [generate and upload](https://help.github.com/articles/generating-a-new-gpg-key/)
+ a key to GitHub. Then commit as usual and you should see your commits coming through as verified.
+
 ## Turning off the "helpful" popup when using git gui
 
 When running `git gui` you will almost always get a warning that there is too many loose objects and a gc
