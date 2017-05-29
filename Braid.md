@@ -35,7 +35,7 @@ branch in the repository and then go to the GitHub web interface and create a pu
 likely be streamlined in the future so that it cann all be done from the commandline). Then `@realityforge` will review
 the change and merge it to master. To push local changes to a new branch `MyNewFeature` use;
 
-    $ braid push vendor/docs/domgen --branch MyNewFeature
+    $ braid push vendor/tools/domgen --branch MyNewFeature
 
 After the new branch has been merged into master, it is simply a matter of issuing another
 `braid update` command to update the local braid. It is recommended that this is done immediately to avoid merge problems
