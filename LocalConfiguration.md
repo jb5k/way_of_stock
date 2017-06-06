@@ -40,7 +40,6 @@ i.e `~/.environments.d/common.local.sh` like:
     export KEYCLOAK_REALM_PUBLIC_KEY="MI..."
     export KEYCLOAK_AUTH_SERVER_URL="http://id.example.com/"
     export KEYCLOAK_ADMIN_PASSWORD=password
-    export KEYCLOAK_TOKEN="ey..."
     export KEYCLOAK_SERVICE_USERNAME=YourUsername
     export KEYCLOAK_SERVICE_PASSWORD=YourPassword
 
