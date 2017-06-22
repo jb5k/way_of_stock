@@ -3,7 +3,7 @@
 The app server of choice is Payara/GlassFish. [Payara Server](http://www.payara.co.uk/) is a drop in replacement for
 GlassFish Server with the peace of mind of quarterly releases containing enhancements, bug fixes and patches to
 upstream GlassFish Server and dependent libraries including Tyrus, Eclipse Link, Jersey and others. The version of
-Payara we currently use is `4.1.1.164 (Full Java EE)`.
+Payara we currently use is `4.1.2.172 (Full Java EE)`.
 
 ## Download Payara
 
@@ -11,11 +11,11 @@ The product can be downloaded from [http://www.payara.co.uk/downloads](http://ww
 
 This should be downloaded into the directory `~/Applications` and then run:
 
-    $ unzip payara-4.1.1.164.zip && mv payara41 payara-4.1.1.164
+    $ unzip payara-4.1.2.172.zip && mv payara41 payara-4.1.2.172
 
 Create a symlink called `payara` to the longer directory name.
 
-    $ ln -s ~/Applications/payara-4.1.1.164 ~/Applications/payara
+    $ ln -s ~/Applications/payara-4.1.2.172 ~/Applications/payara
 
 Once installed, it's not a bad idea to delete a few modules that are not required:
 
