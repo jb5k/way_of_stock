@@ -5,7 +5,7 @@ destination and to browse messages on an existing queue.
 
 ## Download and Install
 
-Download the installer from `https://sourceforge.net/projects/jmstoolbox/` and install into the
+Download the installer from [Sourceforge](https://sourceforge.net/projects/jmstoolbox/) and install into the
 `~/Applications` directory. Under OSX some version need to have the execute bit set on command before
 it can be run. This can be done via:
 
