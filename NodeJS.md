@@ -12,7 +12,7 @@ base directory of the project.
 
 ## Installing nodenv
 
-Under Linux you need to run;
+You need to run:
 
     $ git clone https://github.com/nodenv/nodenv.git ~/.nodenv
     $ git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
@@ -62,14 +62,14 @@ be sufficient to get started.
 
 #### OSX Instructions
 
-Under OSX with [Homebrew](Homebrew.md) installed you can install via;
+Under OSX with [Homebrew](Homebrew.md) installed you can install via:
 
     $ brew update
     $ brew install yarn
 
 #### Linux Instructions
 
-Under Linux you need to run;
+Under Linux you need to run:
 
     $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
