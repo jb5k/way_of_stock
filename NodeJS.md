@@ -57,23 +57,11 @@ to declare the dependencies and will install them into a local cache `./node_mod
 ### Installing Yarn
 
 The documentation for installing yarn is reasonably comprehensive. See the
-[documentation](https://yarnpkg.com/en/docs/install) for full details. However the notes below should
-be sufficient to get started.
+[documentation](https://yarnpkg.com/en/docs/install) for full details. However the easiest way to install yarn
+is to install it as a global npm package.
 
-#### OSX Instructions
-
-Under OSX with [Homebrew](Homebrew.md) installed you can install via:
-
-    $ brew update
-    $ brew install yarn
-
-#### Linux Instructions
-
-Under Linux you need to run:
-
-    $ curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    $ echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    $ sudo apt-get update && sudo apt-get install yarn
+    $ npm install -g yarn
+    $ nodenv rehash
 
 ### Global package installation
 
