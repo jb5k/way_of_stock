@@ -32,14 +32,19 @@ is to append the following line to `~/.bashrc`.
 ## Configuring and Managing Domains
 
 GlassFish has the concept of domains that are isolated instances of GlassFish that can be started and stopped
-independently. Most projects start up a separate domain from all projects so that they can developed in isolation
-from other projects. Occasionally a project will require the existance of a domain managed by another project and
+independently. Many projects start up a separate domain from all projects so that they can developed in isolation
+from other projects. Sometimes a project will require the existance of a domain managed by another project and
 will deploy artifacts into the other projects domain but this will be documented in the projects README.
 
-Projects will typically have a script `config/setup.sh` that can be sourced to create the domain with all the
-settings required for the project. If present the domain should be able to be created by:
+Projects use [Redfish](https://github.com/realityforge/redfish) to create and update GlassFish domains for local
+development. If a project supports creating a local project-specific domain run the following buildr command to create
+and configure the domain:
 
-    $ source config/setup.sh
+        $ bundle exec buildr redfish:domain:create
+
+Projects can also inject configuration into a running domain by using the command:
+
+        $ bundle exec buildr redfish:domain:update
 
 ## Operating GlassFish from the command-line
 
