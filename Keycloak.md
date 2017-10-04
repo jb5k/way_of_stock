@@ -9,7 +9,7 @@ A realm will be created
 
 ## Setup Instructions
 
-    $ docker run --name keycloak -p 80:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak:2.5.1.Final &
+    $ docker run --name keycloak -p 8880:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin jboss/keycloak:2.5.1.Final &
   
 You can stop start the container with the normal instructions:
 
